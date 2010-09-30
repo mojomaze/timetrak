@@ -1,0 +1,13 @@
+<tr id="activity_<%= activity.id %>" class="list-record">
+  <td><%= check_box_tag 'action_id[]',activity.id, false, :id => "activity_action_id_#{activity.id}" %>
+  <td class="activity-edit"><%= activity.activity_date %></td>
+  <td class="activity-edit"><%= activity.project.number if activity.project %></td>
+  <td class="activity-edit"><%= activity.service %></td>
+  <td class="activity-edit"><%= activity.detail %></td>
+  <td class="activity-edit"><%= activity.activity_type %></td>
+  <td class="activity-edit"><%= activity.start_time.strftime("%I:%M %p")  if activity.start_time %></td>
+  <td class="activity-edit"><%= activity.end_time.strftime("%I:%M %p")  if activity.end_time %></td>
+  <td class="activity-edit"><%= activity.hours %></td>
+  <td class="activity-edit"><%= activity.bill_type %></td>
+  <td class="activity-edit"><span id="load_edit_<%= activity.id %>" class="loading">Loading...</span></td>
+</tr>

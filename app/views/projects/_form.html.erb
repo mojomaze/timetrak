@@ -1,0 +1,40 @@
+<%= form_for(@project, :remote => true, :html => { :id => "project_edit_form" }) do |f| %>
+  <table>
+    <tr><td id="errors" colspan="2"><%= render "shared/error_messages", :target => @project %></td></tr>
+    <tr>
+      <th><%= f.label :client %></th>
+      <td><%= collection_select(:project, :client_id, Client.all, :id, :name, {:prompt => true}) %></td>
+    </tr>
+    <tr>
+      <th><%= f.label :name %></th>
+      <td><%= f.text_field :name %></td>
+    </tr>
+    <tr>
+      <th><%= f.label :number %></th>
+      <td><%= f.text_field :number %></td>
+    </tr>
+    <tr>
+      <th><%= f.label :rate_internal %></th>
+      <td><%= f.text_field :rate_internal %></td>
+    </tr>
+    <tr>
+      <th><%= f.label :billing_name %></th>
+      <td><%= f.text_field :billing_name %></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>
+        <span id="detail_form_actions">
+          <%= f.submit %> or 
+          <% if @project.new_record? %>
+            <%= link_to "Cancel", projects_path, :id => "cancel_edit_item" %>
+          <% else %>
+            <%= link_to "Cancel", project_path(@project), :remote => true, :id => "cancel_edit_item" %>
+          <% end %>
+        </span>
+        <span id="load_cancel" class="loading">Canceling...</span>
+        <span id="load_save" class="loading">Saving...</span>
+      </td>
+    </tr>
+  </table>
+<% end %>

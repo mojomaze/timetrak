@@ -1,0 +1,35 @@
+<% content_for :head do %>
+  <%= javascript_include_tag "app/invoices/list.js" %>
+<% end %>
+
+<div class="shadow-right">
+  <div class="list-heading invoice-heading">
+    <h1>Invoices</h1>
+    <%= render "list_actions" %>
+  </div>
+
+  <div class="list-items invoice-items">
+    <form id="invoices_form" method="post" data-remote="true" action="/invoices/list_action">
+      <%= hidden_field_tag 'action_type' %>
+      <table>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th><%= sortable "number" %></th>
+            <th><%= sortable "start_date", "Start" %></th>
+            <th><%= sortable "end_date", "End" %></th>
+            <th>Non-Billed</th>
+            <th>Billed</th>
+            <th>Total</th>
+            <th><%= sortable "sent" %></th>
+          </tr>
+        </thead>
+        <tbody id="invoices-list">
+          <%= render @invoices %>
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+  <%= will_paginate @invoices %>
+</div>

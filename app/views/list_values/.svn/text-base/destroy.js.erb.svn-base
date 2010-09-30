@@ -1,0 +1,1 @@
+$("#list_value_<%= @list_value.id %>").remove();

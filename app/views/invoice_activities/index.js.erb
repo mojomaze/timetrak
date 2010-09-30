@@ -1,0 +1,9 @@
+$("#activities-list").html("<%= escape_javascript(render(@activities)) %>");
+<% if @invoice %>
+  $("#invoice-dates").html("<%= @invoice.start_date.strftime("%m/%d/%y") %> to <%= @invoice.end_date.strftime("%m/%d/%y") %>")
+  $("#invoice_id").val("<%= @invoice.id %>")
+<% end %>
+$("#project_split").html("<%= escape_javascript(render('project_split')) %>");
+$("#type_split").html("<%= escape_javascript(render('type_split')) %>");
+$("#service_split").html("<%= escape_javascript(render('service_split')) %>");
+$.clearEntryErrors();

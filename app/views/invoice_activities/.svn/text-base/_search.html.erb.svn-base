@@ -1,0 +1,14 @@
+<% form_tag invoice_activities_path, :method => :get, :id => 'activity_search_form', :remote => true do %>
+  <span>
+    Invoice:
+    <% if @invoice %>
+      <%= select("search", "invoice_id", @invoices.collect {|i| [ i.number, i.id ] }, {:selected => @invoice.id}) %>
+       <span id="invoice-dates"><%= @invoice.start_date.strftime("%m/%d/%y") %> to <%= @invoice.end_date.strftime("%m/%d/%y") %></span>
+    <% else %>
+      <%= select("search", "invoice_id", @invoices.collect {|i| [ i.number, i.id ] }, {:prompt => 'Select Invoice'}) %>
+    <% end %>
+  </span>
+  <span>
+    <%= submit_tag "Search", :name => nil %>
+  </span>
+<% end %>

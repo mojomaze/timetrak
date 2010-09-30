@@ -1,0 +1,10 @@
+<tr id="project_<%= project.id %>" class="list-record">
+  <td><%= check_box_tag 'action_id[]',project.id, false, :id => "project_action_id_#{project.id}" %>
+  <td class="project-edit"><%= project.number %></td>
+  <td class="project-edit"><%= project.client.short_name %></td>
+  <td class="project-edit"><%= project.name %></td>
+  <td class="project-edit"><%= project.rate_internal %></td>
+  <td class="project-edit"><%= project.activities.non_billed.sum(:hours) %></td>
+  <td class="project-edit"><%= project.activities.billed.sum(:hours) %></td>
+  <td class="project-edit"><%= project.activities.sum(:hours) %></td>
+</tr>

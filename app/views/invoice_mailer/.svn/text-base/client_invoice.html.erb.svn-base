@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+</head>
+<body>
+  <div class="invoice-head">
+    <table cellpadding="3">
+      <tr>
+        <th align="right">Date:</th>
+        <td><%= @invoice.sent.strftime("%m-%d-%Y") %></td>
+      </tr>
+      <tr>
+        <th align="right">Invoice:</th>
+        <td><%= @invoice.number %></td>
+      </tr>
+      <tr>
+        <th align="right">From:</th>
+        <td><%= @invoice.user.billing_name if @invoice.user %></td>
+      </tr>
+      <tr>
+        <th align="right">To:</th>
+        <td><%= @invoice.client.name if @invoice.client %></td>
+      </tr>
+        <tr>
+          <th align="right" valign="top">Projects:</th>
+          <td>
+            <% @projects.each_with_index do |project| %>
+              <%= project.number %> - <%= project.client.short_name %>: <%= project.name %><br />
+            <% end %>
+          </td>
+        </tr>
+    </table>
+  </div>
+
+  <div>
+    <p style="padding:5px">Billable Time from <%= @invoice.start_date.strftime("%m-%d-%Y") if !@invoice.start_date.nil? %> 
+    through <%= @invoice.end_date.strftime("%m-%d-%Y") if !@invoice.end_date.nil? %>:</p>
+    <table cellpadding="5">
+      <thead>
+        <tr>
+          <th align="left">Project</th>
+          <th align="right">Hours</th>
+          <th align="right">Rate</th>
+          <th align="right">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @projects.each do |project| %>  
+        <tr id="project_<%= project.id %>">
+          <td class="project-number"><%= project.number %></td>
+          <td align="right"><%= project.total_hours.to_f %></td>
+          <td align="right"><%= number_to_currency(project.rate_internal) %></td>
+          <td align="right"><%= number_to_currency(project.cost_internal) %></td>
+        </tr>
+      <% end %>
+        <tr>
+          <td colspan="3" align="right">Invoice Total:</td>
+          <td align="right"><%= number_to_currency(@invoice.total_cost_internal) %>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

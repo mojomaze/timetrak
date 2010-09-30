@@ -1,0 +1,43 @@
+<% content_for :head do %>
+  <%= javascript_include_tag "app/invoices/detail.js" %>
+<% end %>
+
+<div class="shadow-right">
+  <div class="list-heading invoice-detail-title">
+    <h1>Invoices</h1>
+  </div>
+
+  <div class="detail-head invoice-detail-head">
+    <h2><%= link_to "List", invoices_path %> :: <%= @invoice.new_record? ? "New Invoice" : "invoice ##{@invoice.id}" %></h2>
+  </div>
+
+  <div class="detail-body">
+
+    <div class="detail-main">
+
+      <p class="notice"><%= notice %></p>
+
+      <div id="invoice_detail" class="invoice-head">
+        <% if @invoice.new_record? %>
+          <%= render 'form' %>
+        <% else %>
+          <%= render 'invoice_detail', :object => @invoice %>
+        <% end %>
+      </div>
+
+      <div id="invoice_body" class="invoice-body">
+        <% unless @invoice.new_record? %>
+          <%= render 'invoice_body', :object => @invoice %>
+        <% end %>
+        <div class="detail-footer"></div>
+      </div>
+    </div>
+
+    <div id="detail_actions" class="detail-actions invoice-detail-actions">
+      <% unless @invoice.new_record? %>
+        <%= render "detail_actions" %>
+      <% end %>
+    </div>
+    <div class="detail-footer"></div>
+  </div>
+</div>

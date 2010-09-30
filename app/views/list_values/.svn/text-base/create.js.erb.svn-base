@@ -1,0 +1,6 @@
+$("#values-list").append("<%= escape_javascript(render(@list_value)) %>");
+document.forms['new_list_value'].reset();
+$("#errors").html("");
+$('.fieldWithErrors').each(function(i) {
+	$(this).children().first().unwrap();
+});

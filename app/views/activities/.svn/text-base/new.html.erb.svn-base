@@ -1,0 +1,12 @@
+<% content_for :head do %>
+
+  <%= javascript_include_tag "app/activities/form.js" %>
+  
+<% end %>
+
+
+<h1>New activity</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', activities_path %>

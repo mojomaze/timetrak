@@ -1,0 +1,25 @@
+<h3>Hours by Project</h3>
+<% if @projects_total %>
+<table>
+  <tr>
+    <th>Project</th>
+    <th class="hours">B</th>
+    <th class="hours">N</th>
+    <th class="total">Total</th>
+  </tr>
+  <% @projects_total.each do |project| %>
+    <tr id="project_<%= project.id %>">
+      <td><%= project.number %>:</td>
+      <td class="hours">
+        <% tmp = @projects_billed.detect{|p| p.number == project.number } %>
+        <%= tmp ? tmp.total_hours : 0 %>
+      </td>
+      <td class="hours">
+        <% tmp = @projects_nonbilled.detect{|p| p.number == project.number } %>
+        <%= tmp ? tmp.total_hours : 0 %>
+      </td>
+      <td class="hours"><%= project.total_hours %></td>
+    </tr>
+<% end %>
+</table>
+<% end %>

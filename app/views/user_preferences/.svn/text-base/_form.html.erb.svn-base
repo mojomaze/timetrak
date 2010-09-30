@@ -1,0 +1,27 @@
+<%= form_tag(user_preferences_update_path, :method => "post") do %> 
+  <h2>Invoices</h2>
+  <div class="field">
+    Default Client:
+    <%= select_tag("preferences[invoice_client_id]", options_from_collection_for_select(Client.all, "id", "short_name", @preferences[:invoice_client_id]), {:include_blank => true })%>
+  </div>
+  
+  <h2>Actvities</h2>
+  <div class="field">
+    Default Project:
+    <%= select_tag("preferences[activity_project_id]", options_from_collection_for_select(Project.all, "id", "number", @preferences[:activity_project_id]), {:include_blank => true })%>
+  </div>
+  
+  <div class="field">
+    Default Activity:
+    <%= select_tag("preferences[activity_service]", options_for_select(get_pick_list('action_service'), @preferences[:activity_service]), {:include_blank => true})%>
+  </div>
+  
+  <div class="field">
+    Default Service Type:
+    <%= select_tag("preferences[activity_type]", options_for_select(get_pick_list('action_type'), @preferences[:activity_type]), {:include_blank => true})%>
+  </div>
+  
+  <div class="actions">
+    <%= submit_tag("Update Preferences") %> 
+  </div>
+<% end %>

@@ -1,0 +1,125 @@
+/*  Project List */
+.project-heading {
+	background-color: #A2C0DA;
+	border: 1px solid #A2C0DA;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FAFAFF), to(#A2C0DA));
+	background: -moz-linear-gradient(#FAFAFF, #A2C0DA);
+	background: linear-gradient(#FAFAFF, #A2C0DA);
+}
+
+.project-detail-title {
+	background-color: #A2C0DA;
+	border: 1px solid #A2C0DA;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FAFAFF), to(#A2C0DA));
+	background: -moz-linear-gradient(#FAFAFF, #A2C0DA);
+	background: linear-gradient(#FAFAFF, #A2C0DA);
+}
+
+.project-items tr {
+	background-color: #FAFAFF;
+}
+
+.project-items th {
+	background-color: #DAE6F0;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FAFAFF), to(#DAE6F0));
+	background: -moz-linear-gradient(#FAFAFF, #DAE6F0);
+	background: linear-gradient(#FAFAFF, #DAE6F0);
+}
+
+.project-items {
+	border: 1px solid #A2C0DA;
+}
+
+/* Project Detail */
+.project-detail-head {
+	background-color: #DAE6F0;
+	border: 1px solid #A2C0DA;
+	-webkit-box-shadow: #ccc 0 0 2px;
+    -moz-box-shadow: #ccc 0 0 2px;
+    box-shadow: #ccc 0 0 2px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FAFAFF), to(#DAE6F0));
+	background: -moz-linear-gradient(#FAFAFF, #DAE6F0);
+	background: linear-gradient(#FAFAFF, #DAE6F0);
+}
+
+.project-detail-actions {
+	/*border: 1px solid #DAE6F0;*/
+	background-color: #FAFAFF;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+	-webkit-box-shadow: #ccc 0 0 5px;
+    -moz-box-shadow: #ccc 0 0 5px;
+    box-shadow: #ccc 0 0 5px;
+	border-top: none;
+	border-left: none;
+}
+
+.project-head {
+	font-size: .75em;
+	padding: 10px;
+	margin-left: 10px;
+	border: 1px solid #A2C0DA;
+	width: 600px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	-webkit-box-shadow: #ccc 0 0 2px;
+    -moz-box-shadow: #ccc 0 0 2px;
+    box-shadow: #ccc 0 0 2px;
+}
+
+.project-head th{
+	text-align: right;
+	padding: 2px 10px 10px 2px;
+	vertical-align: top;
+}
+
+.project-head td{
+	padding: 2px 2px 10px 2px;
+	vertical-align: top;
+}
+
+.project-body{
+	padding: 10px;
+}
+
+.project-split {
+	float: left;
+	font-size: .625em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #A2C0DA;
+	margin: 10px 10px 10px 0px;
+}
+
+.project-split h3 {
+	margin: 0px;
+	padding: 4px;
+	background-color: #A2C0DA;
+}
+
+.project-split table {
+	width: 100%;
+	margin: 2px;
+	padding: 4px;
+}
+
+.project-split th {
+	text-align: left;
+}
+
+.project-split th.hours {
+	text-align: right;
+	width: 30px;
+}
+
+.project-split th.total {
+	text-align: right;
+	width: 40px;
+}
+
+.project-split td.hours {
+	text-align: right;
+}

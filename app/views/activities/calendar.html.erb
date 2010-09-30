@@ -1,0 +1,29 @@
+<div id="calendar">
+  <h2 id="month">
+    <%= link_to "<", :month => (@date.beginning_of_month-1).strftime("%Y-%m-%d") %>
+    <%=h @date.strftime("%B %Y") %>
+    <%= link_to ">", :month => (@date.end_of_month+1).strftime("%Y-%m-%d") %>
+  </h2>
+  <%= calendar_for @activities, :year => @date.year, :month => @date.month do |calendar| %>
+    <%= calendar.head('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday') %>
+    <%= calendar.day(:day_method => :activity_date) do |date, activities| %>
+      <%= date.day %>
+      <ul>
+        <% projects = Hash.new(0) %>
+        <% activities.each do |activity|
+          # populate based on billed / non-billed
+          if activity.billed?
+            projects[activity.project.number+" (B)"] += activity.hours
+          else
+            projects[activity.project.number+" (N)"] += activity.hours
+          end
+        end %>
+        <% 
+          sorted = projects.sort_by{|project, total| project}  
+          sorted.each do |project, total| %>
+            <li><%= project %>: <%= "%0.2f" % total %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  <% end %>
+</div>

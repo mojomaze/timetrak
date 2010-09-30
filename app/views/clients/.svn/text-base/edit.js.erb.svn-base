@@ -1,0 +1,2 @@
+$("#client_detail").html("<%= escape_javascript(render('form')) %>");
+$.addFormListeners();

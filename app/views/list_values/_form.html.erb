@@ -1,0 +1,17 @@
+<%= form_for @list_value, :remote => true do |f| %>
+  <%= render "shared/error_messages", :target => @list_value %>
+  
+  <%= f.hidden_field :list_id %>
+  
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </div>
+  <div class="actions">
+    <%= f.submit %> or <%= link_to 'Cancel', @list_value , :remote => true, :id => 'cancel-add-item' %>
+  </div>
+<% end %>

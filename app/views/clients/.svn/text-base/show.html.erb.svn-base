@@ -1,0 +1,43 @@
+<% content_for :head do %>
+  <%= javascript_include_tag "app/clients/detail.js" %>
+<% end %>
+
+<div class="shadow-right">
+  <div class="list-heading client-detail-title">
+    <h1>clients</h1>
+  </div>
+
+  <div class="detail-head client-detail-head">
+    <h2><%= link_to "List", clients_path %> :: <%= @client.new_record? ? "New client" : "client ##{@client.id}" %></h2>
+  </div>
+
+  <div class="detail-body client-detail-body">
+
+    <div class="detail-main">
+
+      <p class="notice"><%= notice %></p>
+
+      <div id="client_detail" class="client-head">
+        <% if @client.new_record? %>
+          <%= render 'form' %>
+        <% else %>
+          <%= render 'client_detail', :object => @client %>
+        <% end %>
+      </div>
+
+      <div id="client_body" class="client-body">
+        <% unless @client.new_record? %>
+          <%= render 'client_body', :object => @client %>
+        <% end %>
+        <div class="detail-footer"></div>
+      </div>
+    </div>
+
+    <div id="detail_actions" class="detail-actions client-detail-actions">
+      <% unless @client.new_record? %>
+        <%= render "detail_actions" %>
+      <% end %>
+    </div>
+    <div class="detail-footer"></div>
+  </div>
+</div>

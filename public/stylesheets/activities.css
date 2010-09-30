@@ -1,0 +1,168 @@
+/*  ENTRY VIEW */
+/*  users base setup fromm lists */
+
+.entry-heading {
+	background-color: #A2C0DA;
+	border: 1px solid #A2C0DA;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FAFAFF), to(#A2C0DA));
+	background: -moz-linear-gradient(#FAFAFF, #A2C0DA);
+	background: linear-gradient(#FAFAFF, #A2C0DA);
+}
+
+.entry-items tr {
+	background-color: #FAFAFF;
+}
+
+.entry-items th {
+	background-color: #DAE6F0;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FAFAFF), to(#DAE6F0));
+	background: -moz-linear-gradient(#FAFAFF, #DAE6F0);
+	background: linear-gradient(#FAFAFF, #DAE6F0);
+}
+
+.entry-items {
+	border: 1px solid #A2C0DA;
+}
+
+.activity-heading {
+	background-color: #A2C0DA;
+	border: 1px solid #A2C0DA;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FAFAFF), to(#A2C0DA));
+	background: -moz-linear-gradient(#FAFAFF, #A2C0DA);
+	background: linear-gradient(#FAFAFF, #A2C0DA);
+}
+
+.activity-items tr {
+	background-color: #FAFAFF;
+}
+
+.activity-items th {
+	background-color: #DAE6F0;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FAFAFF), to(#DAE6F0));
+	background: -moz-linear-gradient(#FAFAFF, #DAE6F0);
+	background: linear-gradient(#FAFAFF, #DAE6F0);
+}
+
+.activity-items {
+	border: 1px solid #A2C0DA;
+}
+
+#new_activity_entry {
+	background-color: #fff;
+	border: 2px solid #999;
+}
+.list-column {
+	float: left;
+	width: 80%;
+	min-width: 900px;
+}
+
+.splits-column {
+	float: right;
+	width: 19%;
+	margin-top: 10px;
+}
+
+.invoice-split {
+	font-size: .625em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #A2C0DA;
+	margin-bottom: 10px;
+}
+
+.invoice-split h3 {
+	margin: 0px;
+	padding: 4px;
+	background-color: #A2C0DA;
+}
+
+.invoice-split table {
+	width: 100%;
+	margin: 2px;
+	padding: 4px;
+}
+
+.invoice-split th {
+	text-align: left;
+}
+
+.invoice-split th.hours {
+	text-align: right;
+	width: 30px;
+}
+
+.invoice-split th.total {
+	text-align: right;
+	width: 40px;
+}
+
+.invoice-split td.hours {
+	text-align: right;
+}
+
+/*  CALENDAR VIEW */
+
+#calendar table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#calendar td,
+#calendar th {
+  font-family: "Lucida Grande",arial,helvetica,sans-serif;
+  font-size: 10px;
+  padding: 6px;
+  border: 1px solid #999;
+}
+
+#calendar th {
+  background: #DDD;
+  color: #666;
+  text-align: center;
+  width: 14.2857142857143%;
+}
+
+#calendar td {
+  background: #FFF;
+  color: #777;
+  height: 80px;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+#calendar .notmonth {
+  color: #CCC;
+}
+
+#calendar #month {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#calendar #month a, #calendar #month a:hover {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #999;
+}
+
+#calendar .today {
+  background-color: #D7F2FF;
+}
+
+#calendar ul {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+#calendar li {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  text-align: center;
+}

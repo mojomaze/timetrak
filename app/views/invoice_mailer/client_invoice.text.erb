@@ -1,0 +1,19 @@
+Date:      <%= @invoice.sent.strftime("%m-%d-%Y") %>
+
+Invoice:  <%= @invoice.number %>
+
+From:     <%= @invoice.user.billing_name if @invoice.user %>
+
+To:       <%= @invoice.client.name if @invoice.client %>
+
+Projects:      
+<% @projects.each_with_index do |project| %>
+        <%= project.number %> - <%= project.client.short_name %>: <%= project.name %>
+<% end %>
+      
+Billable Time from <%= @invoice.start_date.strftime("%m-%d-%Y") %> through <%= @invoice.end_date.strftime("%m-%d-%Y") %>:
+  
+Project   Hours   Rate         Total
+<% @projects.each do |project| %>  
+<%= project.number %>       <%= project.total_hours.to_f %>       <%= number_to_currency(project.rate_internal) %>      <%= number_to_currency(project.cost_internal) %>
+<% end %>

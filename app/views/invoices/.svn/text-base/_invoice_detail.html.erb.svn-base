@@ -1,0 +1,38 @@
+<div class="detail-edit-btn">
+  <%= link_to "Edit", edit_invoice_path(@invoice), :remote => true,
+                :class => "gray-btn both-round detail-edit", :id => "invoice_edit_btn" %>
+    <span id="load_edit" class="loading">Loading...</span>
+</div>
+
+<table>
+  <tr>
+    <th>Date:</th>
+    <td>
+      <% if @invoice.sent %>
+        <%= @invoice.sent.strftime("%m-%d-%Y") %>
+      <% else %>
+        Not Sent
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <th>Invoice:</th>
+    <td><%= @invoice.number %></td>
+  </tr>
+  <tr>
+    <th>From:</th>
+    <td><%= @invoice.user.billing_name if @invoice.user %></td>
+  </tr>
+  <tr>
+    <th>To:</th>
+    <td><%= @invoice.client.name if @invoice.client %></td>
+  </tr>
+    <tr>
+      <th>Projects:</th>
+      <td>
+        <% @projects.each_with_index do |project| %>
+          <%= project.number %> - <%= project.client.short_name %>: <%= project.name %><br />
+        <% end %>
+      </td>
+    </tr>
+</table>

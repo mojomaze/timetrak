@@ -1,0 +1,33 @@
+<html>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Project</th>
+      <th>Service</th>
+      <th>Detail</th>
+      <th>Type</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Hours</th>
+      <th>Billing</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+  <% @activities.each do |activity| %>
+    <tr>
+      <td><%= activity.activity_date.strftime("%m/%d/%y") %></td>
+      <td><%= activity.project.number %></td>
+      <td><%= activity.service %></td>
+      <td><%= activity.detail %></td>
+      <td><%= activity.activity_type %></td>
+      <td><%= activity.start_time.strftime("%H:%M")  if activity.start_time %></td>
+      <td><%= activity.end_time.strftime("%H:%M")  if activity.end_time %></td>
+      <td><%= "%0.2f" % activity.hours %></td>
+      <td><%= activity.bill_type %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+</html>

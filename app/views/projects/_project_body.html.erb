@@ -1,0 +1,83 @@
+<div class="project-split">
+  <h3>Hours by User</h3>
+  <table>
+    <tr>
+      <th>User</th>
+      <th class="hours">Billed</th>
+      <th class="hours">Non-Billed</th>
+      <th class="total">Total</th>
+    </tr>
+<% if @users_total %>
+  <% @users_total.each do |user| %>
+    <tr id="user_<%= user.id %>">
+      <td><%= user.username %>:</td>
+      <td class="hours">
+        <% tmp_user = @users_billed.detect{|u| u.username == user.username } %>
+        <%= tmp_user ? tmp_user.total_hours : 0 %>
+      </td>
+      <td class="hours">
+        <% tmp_user = @users_nonbilled.detect{|u| u.username == user.username } %>
+        <%= tmp_user ? tmp_user.total_hours : 0 %>
+      </td>
+      <td class="hours"><%= user.total_hours %></td>
+    </tr>
+  <% end %>
+<% end %>
+  </table>
+</div>
+
+<div class="project-split">
+  <h3>Hours by Type</h3>
+  <table>
+    <tr>
+      <th>Type</th>
+      <th class="hours">Billed</th>
+      <th class="hours">Non-Billed</th>
+      <th class="total">Total</th>
+    </tr>
+<% if @types_total %>
+  <% @types_total.each do |activity| %>
+    <tr id="activity_type_<%= activity.id %>">
+      <td><%= activity.activity_type %>:</td>
+      <td class="hours">
+        <% tmp_activity = @types_billed.detect{|a| a.activity_type == activity.activity_type } %>
+        <%= tmp_activity ? tmp_activity.total_hours : 0 %>
+      </td>
+      <td class="hours">
+        <% tmp_activity = @types_nonbilled.detect{|a| a.activity_type == activity.activity_type } %>
+        <%= tmp_activity ? tmp_activity.total_hours : 0 %>
+      </td>
+      <td class="hours"><%= activity.total_hours %></td>
+    </tr>
+  <% end %>
+<% end %>
+  </table>
+</div>
+
+<div class="project-split">
+  <h3>Hours by Service</h3>
+  <table>
+    <tr>
+      <th>Service</th>
+      <th class="hours">Billed</th>
+      <th class="hours">Non-Billed</th>
+      <th class="total">Total</th>
+    </tr>
+<% if @services_total %>
+  <% @services_total.each do |activity| %>
+    <tr id="activity_service_<%= activity.id %>">
+      <td><%= activity.service %>:</td>
+      <td class="hours">
+        <% tmp_activity = @services_billed.detect{|a| a.service == activity.service } %>
+        <%= tmp_activity ? tmp_activity.total_hours : 0 %>
+      </td>
+      <td class="hours">
+        <% tmp_activity = @services_nonbilled.detect{|a| a.service == activity.service } %>
+        <%= tmp_activity ? tmp_activity.total_hours : 0 %>
+      </td>
+      <td class="hours"><%= activity.total_hours %></td>
+    </tr>
+  <% end %>
+<% end %>
+  </table>
+</div>

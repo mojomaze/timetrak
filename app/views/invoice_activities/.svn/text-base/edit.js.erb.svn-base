@@ -1,0 +1,7 @@
+$.toggleFormControls('hide');
+
+$("#new_activity").attr('method','put').attr('action', '/invoice_activities/<%= @activity.id %>');
+$("#activity_project_id").val("<%= @activity.project_id %>");
+$("#activity_<%= @activity.id %>").html("<%= escape_javascript(render('form', :prefix => '')) %>");
+
+$.addFormControls();

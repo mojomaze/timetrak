@@ -1,0 +1,2 @@
+$("#project_detail").html("<%= escape_javascript(render('project_detail')) %>");
+$.addEditListeners();

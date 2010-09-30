@@ -1,0 +1,40 @@
+<% content_for :head do %>
+
+  <%= javascript_include_tag "app/lists/show.js" %>
+  
+<% end %>
+
+<div class="notice"><%= notice %></div>
+
+<div>
+  <h2>List: <%= @list.name %></h2>
+  
+</div>
+
+<%= link_to 'Add List Item', {}, :id => 'show-add-item' %>
+
+<div id="add-item" style="display:none">
+  <%= render "list_values/form", :object => @list_Value %>
+</div>
+
+<div>
+  <h3>Items:</h3>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Name</td>
+      <td>Value</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </thead>
+  <tbody id="values-list">
+    <%= render @list.list_values %>
+  </tbody>
+</table>
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>

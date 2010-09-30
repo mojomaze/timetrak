@@ -1,0 +1,5 @@
+$("#activities-list").html("<%= escape_javascript(render(@activities)) %>");
+$("#project_split").html("<%= escape_javascript(render('project_split')) %>");
+$("#type_split").html("<%= escape_javascript(render('type_split')) %>");
+$("#service_split").html("<%= escape_javascript(render('service_split')) %>");
+$.clearEntryErrors();

@@ -1,0 +1,49 @@
+10
+
+dir
+20
+file://localhost/Users/mwinkler/svn/timetrak/app/views/devise
+file://localhost/Users/mwinkler/svn/timetrak
+
+
+
+2010-06-19T17:37:42.518559Z
+3
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05446040-3395-4603-ab07-33180b8bd35b
+
+passwords
+dir
+
+sessions
+dir
+
+shared
+dir
+
+mailer
+dir
+
+confirmations
+dir
+
+registrations
+dir
+
+unlocks
+dir
+

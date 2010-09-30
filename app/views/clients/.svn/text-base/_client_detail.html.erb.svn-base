@@ -1,0 +1,24 @@
+<div class="detail-edit-btn">
+  <%= link_to "Edit", edit_client_path(@client), :remote => true,
+                :class => "gray-btn both-round detail-edit", :id => "client_edit_btn" %>
+    <span id="load_edit" class="loading">Loading...</span>
+</div>
+
+<table>
+  <tr>
+    <th>Name:</th>
+    <td><%= @client.name %></td>
+  </tr>
+  <tr>
+    <th>Short Name:</th>
+    <td><%= @client.short_name %></td>
+  </tr>
+  <tr>
+    <th>Billing Name:</th>
+    <td><%= @client.billing_name %></td>
+  </tr>
+  <tr>
+    <th>Billing Email:</th>
+    <td><%= @client.billing_email %></td>
+  </tr>
+</table>

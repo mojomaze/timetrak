@@ -1,0 +1,64 @@
+10
+
+dir
+20
+file://localhost/Users/mwinkler/svn/timetrak/app/views
+file://localhost/Users/mwinkler/svn/timetrak
+
+
+
+2010-09-22T22:38:22.437933Z
+20
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05446040-3395-4603-ab07-33180b8bd35b
+
+devise
+dir
+
+invoices
+dir
+
+user_preferences
+dir
+
+layouts
+dir
+
+invoice_activities
+dir
+
+clients
+dir
+
+activities
+dir
+
+invoice_mailer
+dir
+
+shared
+dir
+
+projects
+dir
+
+list_values
+dir
+
+lists
+dir
+

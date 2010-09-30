@@ -1,0 +1,5 @@
+$("#activities-list").append("<%= escape_javascript(render(@activity)) %>");
+$("#project_split").html("<%= escape_javascript(render('project_split')) %>");
+$("#type_split").html("<%= escape_javascript(render('type_split')) %>");
+$("#service_split").html("<%= escape_javascript(render('service_split')) %>");
+$.toggleFormControls('aftercreate');

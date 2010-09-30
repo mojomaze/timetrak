@@ -1,0 +1,25 @@
+<h3>Hours by Type</h3>
+<% if @types_total %>
+<table>
+  <tr>
+    <th>Type</th>
+    <th class="hours">B</th>
+    <th class="hours">N</th>
+    <th class="total">Total</th>
+  </tr>
+  <% @types_total.each do |activity| %>
+    <tr id="activity_type_<%= activity.id %>">
+      <td><%= activity.activity_type %>:</td>
+      <td class="hours">
+        <% tmp_activity = @types_billed.detect{|a| a.activity_type == activity.activity_type } %>
+        <%= tmp_activity ? tmp_activity.total_hours : 0 %>
+      </td>
+      <td class="hours">
+        <% tmp_activity = @types_nonbilled.detect{|a| a.activity_type == activity.activity_type } %>
+        <%= tmp_activity ? tmp_activity.total_hours : 0 %>
+      </td>
+      <td class="hours"><%= activity.total_hours %></td>
+    </tr>
+<% end %>
+</table>
+<% end %>

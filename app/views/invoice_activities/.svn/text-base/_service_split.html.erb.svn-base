@@ -1,0 +1,25 @@
+<h3>Hours by Service</h3>
+<% if @services_total %>
+<table>
+  <tr>
+    <th>Service</th>
+    <th class="hours">B</th>
+    <th class="hours">N</th>
+    <th class="total">Total</th>
+  </tr>
+  <% @services_total.each do |activity| %>
+    <tr id="activity_service_<%= activity.id %>">
+      <td><%= activity.service %>:</td>
+      <td class="hours">
+        <% tmp_activity = @services_billed.detect{|a| a.service == activity.service } %>
+        <%= tmp_activity ? tmp_activity.total_hours : 0 %>
+      </td>
+      <td class="hours">
+        <% tmp_activity = @services_nonbilled.detect{|a| a.service == activity.service } %>
+        <%= tmp_activity ? tmp_activity.total_hours : 0 %>
+      </td>
+      <td class="hours"><%= activity.total_hours %></td>
+    </tr> 
+<% end %>
+</table>
+<% end %>

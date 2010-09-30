@@ -1,0 +1,13 @@
+<%= fields_for @activity do |f| %>
+  <td><%= collection_select(:activity, :user_id, User.all, :id, :username, {:default => current_user.id}) %></td> 
+  <td><%= f.text_field :activity_date, :size => 9, :id => "#{prefix}activity_date" %></td>
+  <td><input type="text" id="<%= prefix %>activity_project_number" size="4" value="<%= @activity.project.number if @activity.project %>"></td>
+  <td><%= select("activity", "service", get_pick_list('action_service'), {:include_blank => true }) %></td>
+  <td><%= f.text_field :detail, :size => 20 %></td>
+  <td><%= select("activity", "activity_type", get_pick_list('action_type'), {:include_blank => true }) %></td>
+  <td><%= f.text_field :start_time, :value => time_format( @activity.start_time ), :id => "#{prefix}activity_start_time", :size => 6 %></td>
+  <td><%= f.text_field :end_time, :value => time_format( @activity.end_time ), :id => "#{prefix}activity_end_time", :size => 6 %></td>
+  <td><%= f.text_field :hours, :size => 5 %></td>
+  <td><%= select("activity", "bill_type", get_pick_list('bill_type'), {:include_blank => false }) %></td>
+  <td colspan="2"><%= f.submit :disable_with => "Saving..." %> <% if !@activity.new_record? %> or <%= link_to 'Cancel', @activity , :remote => true, :id => 'cancel-add-item' %><% end %></td>
+<% end %>

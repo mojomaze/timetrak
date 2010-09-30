@@ -1,0 +1,15 @@
+<tr id="list_value_<%= list_value.id %>">
+  <td class="handle">[handle]</td>
+  <td class="name">
+    <%= list_value.name %>
+  </td>
+  <td class="value">
+    <%= list_value.value != list_value.name ? list_value.value : "*" %>
+  </td>
+  <td>
+    <span class="edit"><%= link_to "edit", edit_list_value_path(list_value), :remote => true %></span>
+  </td>
+  <td>
+    <span class="delete"><%= link_to "delete", list_value, :method => :delete, :remote => true %></span>
+  </td>
+</tr>

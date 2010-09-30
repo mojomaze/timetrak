@@ -1,0 +1,21 @@
+$('#add-item').hide();
+document.forms['new_list_value'].reset();
+$("#errors").html("");
+$('.fieldWithErrors').each(function(i) {
+	$(this).children().first().unwrap();
+});
+$("#show-add-item").hide();
+$(".edit").hide();
+$(".delete").hide();
+
+$("#errors").attr('id', 'temp_errors');
+$('input').each(function(i) {
+  var tmp = 'temp_'+$(this).attr('id');
+	$(this).attr('id', tmp);
+});
+$("label[for]").each(function(i) {
+  var tmp = 'temp_'+$(this).attr('for');
+	$(this).attr('for', tmp);
+});
+
+$("#list_value_<%= @list_value.id %>").html("<td colspan=\"5\"><%= escape_javascript(render('form')) %></td>");

@@ -1,0 +1,8 @@
+$("#activity_<%= @activity.id %>").replaceWith("<%= escape_javascript(render(@activity)) %>");
+$("#new_activity").attr('method','post').attr('action', '/activities');
+<% if @invoice %>
+  $("#project_split").html("<%= escape_javascript(render('project_split')) %>");
+  $("#type_split").html("<%= escape_javascript(render('type_split')) %>");
+  $("#service_split").html("<%= escape_javascript(render('service_split')) %>");
+<% end %>
+$.toggleFormControls('show');

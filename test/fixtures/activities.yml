@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+mow_lawn:
+  id: 1
+  activity_date: 2010-05-04
+  project_id: 1 
+  service: Maintenance
+  detail: Lawn Mowing
+  activity_type: Grass
+  start_time: 2010-05-04 09:30:00
+  end_time: 2010-05-04 13:30:00
+  hours: 3.5
+  bill_type: B
+  user_id: 1
+
+serve_coke:
+  id: 2
+  activity_date: 2010-05-04
+  project_id: 2
+  service: Service
+  detail: Filled Coke Purchase Order
+  activity_type: Refreshments
+  start_time: 2010-05-04 13:30:00
+  end_time: 2010-05-04 13:45:00
+  hours: .35
+  bill_type: B
+  user_id: 1

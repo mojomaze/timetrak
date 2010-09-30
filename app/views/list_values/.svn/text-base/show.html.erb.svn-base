@@ -1,0 +1,25 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>List:</b>
+  <%= @list_value.list %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @list_value.position %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @list_value.name %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%= @list_value.value %>
+</p>
+
+
+<%= link_to 'Edit', edit_list_value_path(@list_value) %> |
+<%= link_to 'Back', list_values_path %>

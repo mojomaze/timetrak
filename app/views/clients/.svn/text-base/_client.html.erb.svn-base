@@ -1,0 +1,7 @@
+<tr id="client_<%= client.id %>" class="list-record">
+  <td><%= check_box_tag 'action_id[]',client.id, false, :id => "client_action_id_#{client.id}" %>
+  <td class="client-edit"><%= client.name %></td>
+  <td class="client-edit"><%= client.short_name %></td>
+  <td class="client-edit"><%= client.billing_name %></td>
+  <td class="client-edit"><%= client.billing_email %></td>
+</tr>

@@ -1,0 +1,36 @@
+<%= form_for(@invoice, :remote => true, :html => { :id => "invoice_edit_form" }) do |f| %>
+  <%= f.hidden_field :user_id %>
+  <table>
+    <tr><td id="errors" colspan="2"><%= render "shared/error_messages", :target => @invoice %></td></tr>
+    <tr>
+      <th>Invoice:</th>
+      <td><%= f.text_field :number, :size => 6 %></td>
+    </tr>
+    <tr>
+      <th><%= f.label :client %>:</th>
+      <td><%= collection_select(:invoice, :client_id, Client.all, :id, :short_name) %></td>
+    </tr>
+    <tr>
+      <th>Start:</th>
+      <td><%= f.text_field :start_date, :size => 9, :id => "invoice_start_date" %></td>
+    </tr>
+    <tr>
+      <th>End:</th>
+      <td><%= f.text_field :end_date, :size => 9, :id => "invoice_end_date" %></td>
+    </tr>
+    <tr class="actions">
+      <th></th>
+      <td>
+        <span id="detail_form_actions">
+          <%= f.submit %> or 
+          <% if @invoice.new_record? %>
+            <%= link_to "Cancel", invoices_path, :id => "cancel_edit_item" %>
+          <% else %>
+            <%= link_to "Cancel", invoice_path(@invoice), :remote => true, :id => "cancel_edit_item" %>
+          <% end %>
+        </span>
+      <span id="load_cancel" class="loading">Canceling...</span>
+      <span id="load_save" class="loading">Saving...</span></td>
+    </tr>
+  </table>
+<% end %>

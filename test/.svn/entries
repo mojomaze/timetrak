@@ -1,0 +1,77 @@
+10
+
+dir
+5
+file://localhost/Users/mwinkler/svn/timetrak/test
+file://localhost/Users/mwinkler/svn/timetrak
+
+
+
+2010-06-16T19:18:59.618885Z
+1
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05446040-3395-4603-ab07-33180b8bd35b
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2010-06-16T19:22:09.000000Z
+2b8130eb4e1a65bce16e6e0fbe90d447
+2010-06-16T19:18:59.618885Z
+1
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+454
+
+performance
+dir
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+

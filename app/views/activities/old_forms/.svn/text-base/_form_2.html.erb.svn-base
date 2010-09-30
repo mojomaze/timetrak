@@ -1,0 +1,53 @@
+<form id="new_activity" class="new_activity" method="post" data-remote="true" action="/activities">
+
+<%= fields_for( @activity) do |f| %>
+  
+  <%= render "shared/error_messages", :target => @activity %>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+  <input type="hidden" id="record_id" name="record_id" value="-3" />
+  <%= hidden_field :activity, :project_id %>
+  
+  <div class="field">
+    <%= f.label :activity_date %><br />
+    <%= f.text_field :activity_date, :size => 9 %>
+  </div>    
+  <div class="field">
+    <label for="activity_project_number">Project</label><br />
+    <input type="text" id="activity_project_number" size="4">
+  </div>
+  <div class="field">
+    <%= f.label :service %><br />
+    <%= select("activity", "service", get_pick_list('action_service'), {:include_blank => true }) %>
+ </div>
+  <div class="field">
+    <%= f.label :detail %><br />
+    <%= f.text_field :detail, :size => 20 %>
+  </div>
+  <div class="field">
+    <%= f.label :activity_type %><br />
+    <%= select("activity", "activity_type", get_pick_list('action_type'), {:include_blank => true }) %>
+  </div>
+  <div class="field">
+    <%= f.label :start_time %><br />
+    <%= time_select :activity, :start_time %>
+  </div>
+  <div class="field">
+    <%= f.label :end_time %><br />
+    <%= time_select :activity, :end_time %>
+  </div>
+  <div class="field">
+    <%= f.label :hours %><br />
+    <%= f.text_field :hours, :size => 5 %>
+  </div>
+  <div class="field">
+    <%= f.label :bill_type %><br />
+    <%= select("activity", "bill_type", get_pick_list('bill_type'), {:include_blank => false }) %>
+  </div>
+  <div class="actions">
+    <br />
+    <%= f.submit %> or <%= link_to 'Cancel', @activity , :remote => true, :id => 'cancel-add-item' %>
+  </div>
+  
+<% end %>
+
+</form>

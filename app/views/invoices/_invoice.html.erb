@@ -1,0 +1,10 @@
+<tr id="invoice_<%= invoice.id %>" class="list-record">
+  <td><%= check_box_tag 'action_id[]',invoice.id, false, :id => "invoice_action_id_#{invoice.id}" %>
+  <td class="invoice-edit"><%= invoice.number %></td>
+  <td class="invoice-edit"><%= invoice.start_date %></td>
+  <td class="invoice-edit"><%= invoice.end_date %></td>
+  <td class="invoice-edit"><%= invoice.total_non_billed %></td>
+  <td class="invoice-edit"><%= invoice.total_hours %></td>
+  <td class="invoice-edit"><%= number_to_currency(invoice.total_cost_internal) %></td>
+  <td class="invoice-edit"><%= invoice.sent %></td>
+</tr>

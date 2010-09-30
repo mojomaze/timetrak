@@ -1,0 +1,4 @@
+$("#project_detail").html("<%= escape_javascript(render('project_detail')) %>").effect("highlight");
+$("#project_body").html("<%= escape_javascript(render('project_body')) %>");
+$("#detail_actions").html("<%= escape_javascript(render('detail_actions')) %>");
+$.addEditListeners();

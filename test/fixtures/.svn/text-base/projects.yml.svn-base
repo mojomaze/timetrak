@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+groundskeeping:
+  id: 1
+  client_id: 1
+  name: Groundskeeping
+  number: 1001
+  rate_internal: 80.00
+
+vending:
+  id: 2
+  client_id: 1
+  name: Vending
+  number: 1002
+  rate_internal: 80.00
+  
+security:
+  id: 3
+  client_id: 2
+  name: Security
+  number: 1003
+  rate_internal: 80.00
+

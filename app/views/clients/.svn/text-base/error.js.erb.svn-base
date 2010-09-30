@@ -1,0 +1,3 @@
+$("#errors").html("<%= escape_javascript(render("shared/error_messages", :target => @client)) %>");
+$('#load_save').hide();
+$('#detail_form_actions').show();

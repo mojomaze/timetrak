@@ -1,0 +1,28 @@
+<p>Billable Time from <%= @invoice.start_date.strftime("%m-%d-%Y") if !@invoice.start_date.nil? %> 
+through <%= @invoice.end_date.strftime("%m-%d-%Y") if !@invoice.end_date.nil? %>:</p>
+<table>
+  <thead>
+    <tr>
+      <th class="project-number">Project</th>
+      <th>Non-Billed</th>
+      <th>Billed</th>
+      <th>Rate</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @projects.each do |project| %>  
+    <tr id="project_<%= project.id %>">
+      <td class="project-number"><%= project.billing_name %></td>
+      <td><%= project.total_non_billed %></td>
+      <td><%= project.total_hours.to_f %></td>
+      <td><%= number_to_currency(project.rate_internal) %></td>
+      <td><%= number_to_currency(project.cost_internal) %></td>
+    </tr>
+  <% end %>
+    <tr>
+      <td class="total" colspan="4">Invoice Total:</td>
+      <td class="total"><%= number_to_currency(@invoice.total_cost_internal) %>
+    </tr>
+  </tbody>
+</table>

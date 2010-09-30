@@ -1,0 +1,43 @@
+<% content_for :head do %>
+  <%= javascript_include_tag "app/projects/detail.js" %>
+<% end %>
+
+<div class="shadow-right">
+  <div class="list-heading project-detail-title">
+    <h1>Projects</h1>
+  </div>
+
+  <div class="detail-head project-detail-head">
+    <h2><%= link_to "List", projects_path %> :: <%= @project.new_record? ? "New Project" : "project ##{@project.id}" %></h2>
+  </div>
+
+  <div class="detail-body">
+
+    <div class="detail-main">
+
+      <p class="notice"><%= notice %></p>
+
+      <div id="project_detail" class="project-head">
+        <% if @project.new_record? %>
+          <%= render 'form' %>
+        <% else %>
+          <%= render 'project_detail', :object => @project %>
+        <% end %>
+      </div>
+
+      <div id="project_body" class="project-body">
+        <% unless @project.new_record? %>
+          <%= render 'project_body', :object => @project %>
+        <% end %>
+        <div class="detail-footer"></div>
+      </div>
+    </div>
+
+    <div id="detail_actions" class="detail-actions project-detail-actions">
+      <% unless @project.new_record? %>
+        <%= render "detail_actions" %>
+      <% end %>
+    </div>
+    <div class="detail-footer"></div>
+  </div>
+</div>

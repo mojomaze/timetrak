@@ -1,0 +1,10 @@
+$('.fieldWithErrors').each(function(i) {
+	$(this).children().first().unwrap();
+});
+
+$("#errors").html("<%= escape_javascript(render("shared/error_messages", :target => @list_value)) %>");
+
+<% @list_value.errors.each do |attr, msg| %>
+    $( "label[for='<%= "list_value_#{attr}" %>']" ).wrap('<div class="fieldWithErrors" />');
+    $("<%= "#list_value_#{attr}" %>").wrap('<div class="fieldWithErrors" />');
+<% end %>

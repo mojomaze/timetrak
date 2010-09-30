@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timetrak</title>
+  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag "jquery/redmond/jquery-ui-1.8.1.custom.css" %>
+  <%= stylesheet_link_tag "jquery-timeentry/jquery.timeentry.css" %>
+  <%= stylesheet_link_tag "jquery-loadmask/jquery.loadmask.css" %>
+  <%= javascript_include_tag "jquery/jquery-1.4.2.min.js", "jquery/jquery-ui-1.8.1.custom.min.js", "jquery.rails.js", "application.js" %>
+  <%= javascript_include_tag "jquery-timeentry/jquery.timeentry.js" %>
+  <%= javascript_include_tag "jquery-loadmask/jquery.loadmask.js" %>
+  <%= csrf_meta_tag %>
+  <%= yield :head %>
+</head>
+<body>
+  <div class="nav-top-right nav-top">
+    <% if current_user %>
+      <span class="nav-item">User: <%= current_user.username %></span> |
+      <span class="nav-item"><%= link_to "Preferences", user_preferences_edit_path %></span> |
+      <span class="nav-item"><%= link_to "Profile", edit_user_registration_path %></span> |
+      <span class="nav-item"><%= link_to "Logout", destroy_user_session_path %></span>
+    <% end %>
+  </div>
+  <div class="nav-top-left nav-top">
+  <% if current_user %>
+    <span class="nav-item"><%= link_to "Invoice Activities", invoice_activities_path %></span> |
+    <span class="nav-item"><%= link_to "Invoices", invoices_path %></span> |
+    <span class="nav-item"><%= link_to "Activities", activities_path %></span> |
+    <span class="nav-item"><%= link_to "Calendar",  calendar_activities_path %></span> |
+    <span class="nav-item"><%= link_to "Projects", projects_path %></span> |
+    <span class="nav-item"><%= link_to "Clients", clients_path %></span> |
+    <span class="nav-item"><%= link_to "Lists", lists_path %></span>
+  <% end %>
+  </div>
+  
+  <%= yield %>
+
+</body>
+</html>

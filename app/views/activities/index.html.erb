@@ -1,0 +1,40 @@
+<% content_for :head do %>
+  <%= javascript_include_tag "app/activities/list.js" %>
+<% end %>
+
+<div class="shadow-right">
+  <div class="list-heading activity-heading">
+    <h1>Activities</h1>
+    <%= render "list_actions" %>
+  </div>
+
+  <div class="list-items activity-items">
+    <div style="display:none;"><a id ="activity_edit_link" href="" data-remote="true"></a></div>
+    <form id="new_activity" class="new_activity" method="post" data-remote="true" action="/activities">
+      <%= hidden_field_tag "activity[project_id]" %>
+      <%= hidden_field_tag 'action_type' %>
+      <table>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th><%= sortable "activity_date", "Date" %></th>
+            <th><%= sortable "project_id" %></th>
+            <th><%= sortable "service" %></th>
+            <th><%= sortable "detail" %></th>
+            <th><%= sortable "activity_type" %></th>
+            <th><%= sortable "start_time" %></th>
+            <th><%= sortable "end_time" %></th>
+            <th><%= sortable "hours" %></th>
+            <th><%= sortable "bill_type" %></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="activities-list">
+          <%= render @activities %>
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+  <%= will_paginate @activities %>
+</div>

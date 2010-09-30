@@ -1,0 +1,4 @@
+$("#invoice_detail").html("<%= escape_javascript(render('invoice_detail')) %>").effect("highlight");
+$("#invoice_body").html("<%= escape_javascript(render('invoice_body')) %>");
+$("#detail_actions").html("<%= escape_javascript(render('detail_actions')) %>");
+$.addEditListeners();

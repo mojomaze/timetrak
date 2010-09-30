@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+cubs:
+  id: 1
+  name: Chicago Cubs
+  short_name: Cubs
+
+sox:
+  id: 2
+  name: Chicago White Sox
+  short_name: Sox

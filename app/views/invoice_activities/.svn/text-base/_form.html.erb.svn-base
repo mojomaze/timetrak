@@ -1,0 +1,26 @@
+<%= fields_for @activity do |f| %>
+  <td><%= f.hidden_field :user_id, :value => current_user.id %></td> 
+  <td><%= f.text_field :activity_date, :size => 9, :id => "#{prefix}activity_date" %><div class="error-msg"></div></td>
+  <td><input type="text" id="<%= prefix %>activity_project_number" size="4" name="activity_project_number" value="<%= @activity.project.number if @activity.project %>"><div class="error-msg"></div></td>
+  <td><%= select("activity", "service", get_pick_list('action_service'), {:include_blank => true }) %><div class="error-msg"></div></td>
+  <td><%= f.text_field :detail, :size => 20 %><div class="error-msg"></div></td>
+  <td><%= select("activity", "activity_type", get_pick_list('action_type'), {:include_blank => true }) %><div class="error-msg"></div></td>
+  <td><%= f.text_field :start_time, :value => time_format( @activity.start_time ), :id => "#{prefix}activity_start_time", :size => 6 %><div class="error-msg"></div></td>
+  <td><%= f.text_field :end_time, :value => time_format( @activity.end_time ), :id => "#{prefix}activity_end_time", :size => 6 %><div class="error-msg"></div></td>
+  <td><%= f.text_field :hours, :size => 5 %><div class="error-msg"></div></td>
+  <td><%= select("activity", "bill_type", get_pick_list('bill_type'), {:include_blank => false }) %><div class="error-msg"></div></td>
+  <td>
+  <% if @activity.new_record? %>
+    <span id="action_create"><%= f.submit 'Create' %></span>
+    <span id="load_create" class="loading">Creating...</span>
+  <% else %>
+    <span id="action_edit">
+      <%= submit_tag 'Save', :id => 'activity_save' %> 
+      or <%= link_to 'Cancel', invoice_activity_path(@activity) , :remote => true, :id => 'cancel-edit-item' %>
+    </span>
+    <span id="load_save" class="loading">Saving...</span>
+    <span id="load_cancel" class="loading">Canceling...</span>
+  <% end %>
+  </td>
+
+<% end %>

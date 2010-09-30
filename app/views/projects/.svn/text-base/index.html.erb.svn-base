@@ -1,0 +1,35 @@
+<% content_for :head do %>
+  <%= javascript_include_tag "app/projects/list.js" %>
+<% end %>
+
+<div class="shadow-right">
+  <div class="list-heading project-heading">
+    <h1>Projects</h1>
+    <%= render "list_actions" %>
+  </div>
+
+  <div class="list-items project-items">
+    <form id="projects_form" method="post" data-remote="true" action="/projects/list_action">
+      <%= hidden_field_tag 'action_type' %>
+      <table>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th><%= sortable "number" %></th>
+            <th><%= sortable "client_id", "Client" %></th>
+            <th><%= sortable "name" %></th>
+            <th><%= sortable "rate_internal" %></th>
+            <th>Non-Billed</th>
+            <th>Billed</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="projects-list">
+          <%= render @projects %>
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+  <%= will_paginate @projects %>
+</div>

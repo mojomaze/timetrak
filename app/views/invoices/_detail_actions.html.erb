@@ -1,0 +1,12 @@
+<ul>
+  <% if @invoice.client_id %>
+    <li><%= link_to @invoice.sent ? 'Resend' : 'Send', send_invoice_invoice_path(@invoice), 
+                :confirm => "Send Invoice to #{@invoice.client.name}?", 
+                  :class => "gray-btn both-round" %></li>
+  <% end %>
+  <li class="strong">Status: <%= @invoice.sent ? "Sent" : "Not Sent" %></li>
+  <li><%= link_to "Activities", {:controller => "invoice_activities", :search => { :invoice_id => @invoice.id }}, {:class => nil} %></li>
+  <span id="detail_record_info">
+    <%= render "shared/detail_record_info", :target => @invoice %>
+  </span>
+</ul>

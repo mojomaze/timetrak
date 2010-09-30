@@ -1,0 +1,1 @@
+$("#invoices-list").html("<%= escape_javascript(render(@invoices)) %>");

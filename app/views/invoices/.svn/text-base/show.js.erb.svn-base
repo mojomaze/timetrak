@@ -1,0 +1,2 @@
+$("#invoice_detail").html("<%= escape_javascript(render('invoice_detail')) %>");
+$.addEditListeners();

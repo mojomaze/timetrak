@@ -1,0 +1,2290 @@
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 980190962) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) AS count_id FROM "activities"
+  Processing by ActivitiesController#create as HTML
+  Parameters: {"activity"=>{"activity_date"=>Tue, 04 May 2010, "activity_type"=>"MyString", "bill_type"=>"MyString", "created_at"=>2010-05-20 00:16:30 UTC, "detail"=>"MyString", "end_time"=>2000-01-01 09:34:47 UTC, "hours"=>#<BigDecimal:104889168,'0.999E1',18(18)>, "id"=>980190962, "project_id"=>nil, "service"=>"MyString", "start_time"=>2000-01-01 09:34:47 UTC, "updated_at"=>2010-05-20 00:16:30 UTC}}
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to 
+Completed   in 57ms
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 980190962) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) AS count_id FROM "activities"
+  Processing by ActivitiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 980190962) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "activities" WHERE ("activities"."id" = 980190962)
+Redirected to http://test.host/activities
+Completed 302 Found in 32ms
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "activities"[0m
+  [1m[35mActivity Load (0.4ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 980190962) LIMIT 1
+  Processing by ActivitiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 980190962) LIMIT 1[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists" WHERE ("lists"."name" = 'action_service') LIMIT 1
+Rendered activities/_form.html.erb (27.3ms)
+Completed   in 85ms
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 980190962) LIMIT 1[0m
+  Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (0.6ms)[0m  SELECT "activities".* FROM "activities"
+Rendered shared/_error_messages.html.erb (0.9ms)
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE ("lists"."name" = 'action_service') LIMIT 1[0m
+Rendered activities/_form.html.erb (2.4ms)
+Completed   in 37ms
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 980190962) LIMIT 1
+  Processing by ActivitiesController#new as HTML
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE ("lists"."name" = 'action_service') LIMIT 1[0m
+Rendered activities/_form.html.erb (1.9ms)
+Completed   in 19ms
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 980190962) LIMIT 1
+  Processing by ActivitiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 980190962) LIMIT 1[0m
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.9ms)
+  [1m[35mActivity Load (0.4ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 980190962) LIMIT 1
+  Processing by ActivitiesController#update as HTML
+  Parameters: {"activity"=>{"activity_date"=>Tue, 04 May 2010, "activity_type"=>"MyString", "bill_type"=>"MyString", "created_at"=>2010-05-20 00:16:30 UTC, "detail"=>"MyString", "end_time"=>2000-01-01 09:34:47 UTC, "hours"=>#<BigDecimal:10182c5d8,'0.999E1',18(18)>, "id"=>980190962, "project_id"=>nil, "service"=>"MyString", "start_time"=>2000-01-01 09:34:47 UTC, "updated_at"=>2010-05-20 00:16:30 UTC}, "id"=>"980190962"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 980190962) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to 
+Completed   in 8ms
+  [1m[35mClient Load (0.3ms)[0m  SELECT "clients".* FROM "clients" WHERE ("clients"."id" = 980190962) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "clients"[0m
+  Processing by ClientsController#create as HTML
+  Parameters: {"client"=>{"created_at"=>2010-05-20 00:16:30 UTC, "id"=>980190962, "name"=>"MyString", "short_name"=>nil, "updated_at"=>2010-05-20 00:16:30 UTC}}
+WARNING: Can't mass-assign these protected attributes: id
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("created_at", "name", "short_name", "updated_at") VALUES ('2010-05-20 00:16:30.000000', 'MyString', NULL, '2010-05-20 00:16:30.000000')
+Redirected to http://test.host/clients/980190963
+Completed 302 Found in 84ms
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "clients"[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT "clients".* FROM "clients" WHERE ("clients"."id" = 980190962) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "clients"[0m
+  Processing by ClientsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients" WHERE ("clients"."id" = 980190962) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "clients" WHERE ("clients"."id" = 980190962)[0m
+Redirected to http://test.host/clients
+Completed 302 Found in 3ms
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) AS count_id FROM "clients"
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE ("clients"."id" = 980190962) LIMIT 1[0m
+  Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mClient Load (0.4ms)[0m  SELECT "clients".* FROM "clients" WHERE ("clients"."id" = 980190962) LIMIT 1
+Rendered clients/_form.html.erb (4.3ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 2.9ms)
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE ("clients"."id" = 980190962) LIMIT 1[0m
+  Processing by ClientsController#index as HTML
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients"
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.8ms)
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE ("clients"."id" = 980190962) LIMIT 1[0m
+  Processing by ClientsController#new as HTML
+Rendered clients/_form.html.erb (2.4ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+  [1m[35mClient Load (0.3ms)[0m  SELECT "clients".* FROM "clients" WHERE ("clients"."id" = 980190962) LIMIT 1
+  Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE ("clients"."id" = 980190962) LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.6ms)
+  [1m[35mClient Load (0.3ms)[0m  SELECT "clients".* FROM "clients" WHERE ("clients"."id" = 980190962) LIMIT 1
+  Processing by ClientsController#update as HTML
+  Parameters: {"client"=>{"created_at"=>2010-05-20 00:16:30 UTC, "id"=>980190962, "name"=>"MyString", "short_name"=>nil, "updated_at"=>2010-05-20 00:16:30 UTC}, "id"=>"980190962"}
+  [1m[36mClient Load (0.4ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE ("clients"."id" = 980190962) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+Redirected to http://test.host/clients/980190962
+Completed 302 Found in 3ms
+  [1m[35mListValue Load (0.3ms)[0m  SELECT "list_values".* FROM "list_values" WHERE ("list_values"."id" = 980190962) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "list_values"[0m
+  Processing by ListValuesController#create as HTML
+  Parameters: {"list_value"=>{"created_at"=>2010-05-20 00:16:30 UTC, "id"=>980190962, "list_id"=>nil, "name"=>"MyString", "position"=>1, "updated_at"=>2010-05-20 00:16:30 UTC, "value"=>"MyString"}}
+WARNING: Can't mass-assign these protected attributes: id
+  [1m[35mListValue Load (0.2ms)[0m  SELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."name" = 'MyString') AND ("list_values"."list_id" IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.1ms)[0m  [1mSELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."value" = 'MyString') AND ("list_values"."list_id" IS NULL) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (2.7ms)
+Rendered list_values/_form.html.erb (6.4ms)
+Completed 200 OK in 79ms (Views: 23.0ms | ActiveRecord: 1.4ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "list_values"
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT "list_values".* FROM "list_values" WHERE ("list_values"."id" = 980190962) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) AS count_id FROM "list_values"
+  Processing by ListValuesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT "list_values".* FROM "list_values" WHERE ("list_values"."id" = 980190962) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "list_values" SET position = (position - 1) WHERE (list_id IS NULL AND position > 1)
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "list_values" SET "position" = NULL, "updated_at" = '2010-05-20 00:16:31.526726' WHERE ("list_values"."id" = 980190962)[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "list_values" WHERE ("list_values"."id" = 980190962)
+Redirected to http://test.host/list_values
+Completed 302 Found in 4ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "list_values"[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT "list_values".* FROM "list_values" WHERE ("list_values"."id" = 980190962) LIMIT 1
+  Processing by ListValuesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT "list_values".* FROM "list_values" WHERE ("list_values"."id" = 980190962) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered list_values/_form.html.erb (4.5ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 2.1ms)
+  [1m[35mListValue Load (0.3ms)[0m  SELECT "list_values".* FROM "list_values" WHERE ("list_values"."id" = 980190962) LIMIT 1
+  Processing by ListValuesController#index as HTML
+  [1m[36mListValue Load (0.5ms)[0m  [1mSELECT "list_values".* FROM "list_values"[0m
+Completed   in 22ms
+  [1m[35mListValue Load (0.3ms)[0m  SELECT "list_values".* FROM "list_values" WHERE ("list_values"."id" = 980190962) LIMIT 1
+  Processing by ListValuesController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered list_values/_form.html.erb (3.0ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+  [1m[36mListValue Load (0.4ms)[0m  [1mSELECT "list_values".* FROM "list_values" WHERE ("list_values"."id" = 980190962) LIMIT 1[0m
+  Processing by ListValuesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mListValue Load (0.3ms)[0m  SELECT "list_values".* FROM "list_values" WHERE ("list_values"."id" = 980190962) LIMIT 1
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.7ms)
+  [1m[36mListValue Load (0.4ms)[0m  [1mSELECT "list_values".* FROM "list_values" WHERE ("list_values"."id" = 980190962) LIMIT 1[0m
+  Processing by ListValuesController#update as HTML
+  Parameters: {"list_value"=>{"created_at"=>2010-05-20 00:16:30 UTC, "id"=>980190962, "list_id"=>nil, "name"=>"MyString", "position"=>1, "updated_at"=>2010-05-20 00:16:30 UTC, "value"=>"MyString"}, "id"=>"980190962"}
+  [1m[35mListValue Load (0.4ms)[0m  SELECT "list_values".* FROM "list_values" WHERE ("list_values"."id" = 980190962) LIMIT 1
+WARNING: Can't mass-assign these protected attributes: id
+  [1m[36mListValue Load (0.1ms)[0m  [1mSELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."name" = 'MyString') AND ("list_values"."list_id" IS NULL) AND ("list_values".id <> 980190962) LIMIT 1[0m
+  [1m[35mListValue Load (0.1ms)[0m  SELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."value" = 'MyString') AND ("list_values"."list_id" IS NULL) AND ("list_values".id <> 980190962) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.8ms)
+Rendered list_values/_form.html.erb (5.6ms)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.9ms)
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE ("lists"."id" = 980190962) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) AS count_id FROM "lists"
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"created_at"=>2010-05-20 00:16:30 UTC, "id"=>980190962, "name"=>"MyString", "position"=>1, "updated_at"=>2010-05-20 00:16:30 UTC}}
+WARNING: Can't mass-assign these protected attributes: id
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists"."id" FROM "lists" WHERE ("lists"."name" = 'MyString') LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.2ms)
+Rendered lists/_form.html.erb (4.0ms)
+Completed 200 OK in 48ms (Views: 40.7ms | ActiveRecord: 0.5ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "lists"
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE ("lists"."id" = 980190962) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) AS count_id FROM "lists"
+  Processing by ListsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE ("lists"."id" = 980190962) LIMIT 1[0m
+  [1m[35mListValue Load (0.1ms)[0m  SELECT "list_values".* FROM "list_values" WHERE ("list_values".list_id = 980190962) ORDER BY position
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "lists" WHERE ("lists"."id" = 980190962)[0m
+Redirected to http://test.host/lists
+Completed 302 Found in 7ms
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) AS count_id FROM "lists"
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE ("lists"."id" = 980190962) LIMIT 1[0m
+  Processing by ListsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists" WHERE ("lists"."id" = 980190962) LIMIT 1
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered lists/_form.html.erb (3.1ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 1.6ms)
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE ("lists"."id" = 980190962) LIMIT 1[0m
+  Processing by ListsController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.4ms)
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE ("lists"."id" = 980190962) LIMIT 1[0m
+  Processing by ListsController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered lists/_form.html.erb (2.0ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists" WHERE ("lists"."id" = 980190962) LIMIT 1
+  Processing by ListsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE ("lists"."id" = 980190962) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered list_values/_form.html.erb (3.8ms)
+  [1m[35mListValue Load (0.2ms)[0m  SELECT "list_values".* FROM "list_values" WHERE ("list_values".list_id = 980190962) ORDER BY position
+Rendered collection (0.0ms)
+Completed 200 OK in 34ms (Views: 28.8ms | ActiveRecord: 0.6ms)
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE ("lists"."id" = 980190962) LIMIT 1[0m
+  Processing by ListsController#update as HTML
+  Parameters: {"list"=>{"created_at"=>2010-05-20 00:16:30 UTC, "id"=>980190962, "name"=>"MyString", "position"=>1, "updated_at"=>2010-05-20 00:16:30 UTC}, "id"=>"980190962"}
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists" WHERE ("lists"."id" = 980190962) LIMIT 1
+WARNING: Can't mass-assign these protected attributes: id
+  [1m[36mList Load (0.1ms)[0m  [1mSELECT "lists"."id" FROM "lists" WHERE ("lists"."name" = 'MyString') AND ("lists".id <> 980190962) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered lists/_form.html.erb (3.2ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.5ms)
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE ("projects"."id" = 980190962) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "projects"[0m
+  Processing by ProjectsController#create as HTML
+  Parameters: {"project"=>{"client_id"=>nil, "created_at"=>2010-05-20 00:16:30 UTC, "id"=>980190962, "name"=>"MyString", "number"=>"MyString", "rate_internal"=>#<BigDecimal:10484ae18,'0.999E1',18(18)>, "updated_at"=>2010-05-20 00:16:30 UTC}}
+WARNING: Can't mass-assign these protected attributes: id
+  [1m[35mClient Load (0.6ms)[0m  SELECT "clients".* FROM "clients"
+Rendered projects/_form.html.erb (6.5ms)
+Completed 200 OK in 66ms (Views: 58.8ms | ActiveRecord: 0.9ms)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "projects"[0m
+  [1m[35mProject Load (0.4ms)[0m  SELECT "projects".* FROM "projects" WHERE ("projects"."id" = 980190962) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "projects"[0m
+  Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE ("projects"."id" = 980190962) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "projects" WHERE ("projects"."id" = 980190962)[0m
+Redirected to http://test.host/projects
+Completed 302 Found in 2ms
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) AS count_id FROM "projects"
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE ("projects"."id" = 980190962) LIMIT 1[0m
+  Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE ("projects"."id" = 980190962) LIMIT 1
+  [1m[36mClient Load (0.6ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+Rendered projects/_form.html.erb (5.2ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 2.5ms)
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE ("projects"."id" = 980190962) LIMIT 1
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT "projects".* FROM "projects" ORDER BY number[0m
+Completed   in 4ms
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE ("projects"."id" = 980190962) LIMIT 1
+  Processing by ProjectsController#new as HTML
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+Rendered projects/_form.html.erb (4.6ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 1.4ms)
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE ("projects"."id" = 980190962) LIMIT 1
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE ("projects"."id" = 980190962) LIMIT 1[0m
+Completed   in 25ms
+  [1m[35mProject Load (0.7ms)[0m  SELECT "projects".* FROM "projects" WHERE ("projects"."id" = 980190962) LIMIT 1
+  Processing by ProjectsController#update as HTML
+  Parameters: {"project"=>{"client_id"=>nil, "created_at"=>2010-05-20 00:16:30 UTC, "id"=>980190962, "name"=>"MyString", "number"=>"MyString", "rate_internal"=>#<BigDecimal:10320aab8,'0.999E1',18(18)>, "updated_at"=>2010-05-20 00:16:30 UTC}, "id"=>"980190962"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE ("projects"."id" = 980190962) LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients"
+Rendered projects/_form.html.erb (5.5ms)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 1.6ms)
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-19 17:00:00.000000', "hours" = 11.0, "start_time" = '2010-05-19 06:00:00.000000', "updated_at" = '2010-05-20 03:28:34.263517' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-19 17:00:00.000000', "hours" = 11.0, "start_time" = '2010-05-19 06:00:00.000000', "updated_at" = '2010-05-20 03:29:37.521801' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-19 18:00:00.000000', "hours" = 1.0, "start_time" = '2010-05-19 17:00:00.000000', "updated_at" = '2010-05-20 03:33:18.324924' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-19 18:00:00.000000', "hours" = 1.0, "start_time" = '2010-05-19 17:00:00.000000', "updated_at" = '2010-05-20 03:35:14.615825' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-19 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-19 17:00:00.000000', "updated_at" = '2010-05-20 03:41:03.323746' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-19 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-19 17:00:00.000000', "updated_at" = '2010-05-20 03:41:51.023710' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-19 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-19 17:00:00.000000', "updated_at" = '2010-05-20 03:43:25.723037' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 15:00:59.289365' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 15:04:02.713657' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 15:23:27.707565' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 15:24:05.651308' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 15:33:08.946695' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" IS NULL) LIMIT 1
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" IS NULL) LIMIT 1[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("client_id", "created_at", "name", "number", "rate_internal", "updated_at") VALUES (1, '2010-05-20 15:33:09.006782', 'Test Project', '9999', 0.0, '2010-05-20 15:33:09.006782')[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 15:33:47.675079' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" IS NULL) LIMIT 1
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" IS NULL) LIMIT 1[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("client_id", "created_at", "name", "number", "rate_internal", "updated_at") VALUES (1, '2010-05-20 15:33:47.735357', 'Test Project', '9999', 0.0, '2010-05-20 15:33:47.735357')[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 15:44:47.232360' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("created_at", "name", "short_name", "updated_at") VALUES ('2010-05-20 15:44:47.278108', 'Test Client', 'TC', '2010-05-20 15:44:47.278108')[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects"."id" FROM "projects" WHERE ("projects"."number" IS NULL) LIMIT 1
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("client_id", "created_at", "name", "number", "rate_internal", "updated_at") VALUES (1, '2010-05-20 15:44:47.304553', 'Test Project', '9999', 0.0, '2010-05-20 15:44:47.304553')
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 15:46:43.085440' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("created_at", "name", "short_name", "updated_at") VALUES ('2010-05-20 15:46:43.129051', 'Test Client', 'TC', '2010-05-20 15:46:43.129051')[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects"."id" FROM "projects" WHERE ("projects"."number" IS NULL) LIMIT 1
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("client_id", "created_at", "name", "number", "rate_internal", "updated_at") VALUES (1, '2010-05-20 15:46:43.154844', 'Test Project', '9999', 0.0, '2010-05-20 15:46:43.154844')
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 15:53:53.343160' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("created_at", "name", "short_name", "updated_at") VALUES ('2010-05-20 15:53:53.386892', 'Test Client', 'TC', '2010-05-20 15:53:53.386892')[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects"."id" FROM "projects" WHERE ("projects"."number" IS NULL) LIMIT 1
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("client_id", "created_at", "name", "number", "rate_internal", "updated_at") VALUES (1, '2010-05-20 15:53:53.412500', 'Test Project', '9999', 0.0, '2010-05-20 15:53:53.412500')
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "projects" WHERE (name like '%1001%' or number like '%1001%')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 15:54:45.380809' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("created_at", "name", "short_name", "updated_at") VALUES ('2010-05-20 15:54:45.424690', 'Test Client', 'TC', '2010-05-20 15:54:45.424690')[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects"."id" FROM "projects" WHERE ("projects"."number" IS NULL) LIMIT 1
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("client_id", "created_at", "name", "number", "rate_internal", "updated_at") VALUES (1, '2010-05-20 15:54:45.450508', 'Test Project', '9999', 0.0, '2010-05-20 15:54:45.450508')
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "projects" WHERE (name like '%1001%' or number like '%1001%')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "projects" WHERE (name like '%grounds%' or number like '%grounds%')[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 15:59:37.971071' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("created_at", "name", "short_name", "updated_at") VALUES ('2010-05-20 15:59:38.014886', 'Test Client', 'TC', '2010-05-20 15:59:38.014886')[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists"."id" FROM "lists" WHERE ("lists"."name" IS NULL) LIMIT 1
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists"."id" FROM "lists" WHERE ("lists"."name" = 'Test List') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "lists" ("created_at", "name", "position", "updated_at") VALUES ('2010-05-20 15:59:38.034248', 'Test List', NULL, '2010-05-20 15:59:38.034248')
+  [1m[36mList Load (0.1ms)[0m  [1mSELECT "lists"."id" FROM "lists" WHERE ("lists"."name" = 'Test List') LIMIT 1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects"."id" FROM "projects" WHERE ("projects"."number" IS NULL) LIMIT 1
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "projects" ("client_id", "created_at", "name", "number", "rate_internal", "updated_at") VALUES (1, '2010-05-20 15:59:38.058140', 'Test Project', '9999', 0.0, '2010-05-20 15:59:38.058140')
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "projects" WHERE (name like '%1001%' or number like '%1001%')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "projects" WHERE (name like '%grounds%' or number like '%grounds%')[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 16:10:00.105822' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("created_at", "name", "short_name", "updated_at") VALUES ('2010-05-20 16:10:00.150344', 'Test Client', 'TC', '2010-05-20 16:10:00.150344')[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists"."id" FROM "lists" WHERE ("lists"."name" IS NULL) LIMIT 1
+  [1m[36mList Load (0.1ms)[0m  [1mSELECT "lists"."id" FROM "lists" WHERE ("lists"."name" = 'Test List') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "lists" ("created_at", "name", "position", "updated_at") VALUES ('2010-05-20 16:10:00.170102', 'Test List', NULL, '2010-05-20 16:10:00.170102')
+  [1m[36mList Load (0.1ms)[0m  [1mSELECT "lists"."id" FROM "lists" WHERE ("lists"."name" = 'Test List') LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."name" = 'Test Name') AND ("list_values"."list_id" = 1) LIMIT 1
+  [1m[36mListValue Load (0.1ms)[0m  [1mSELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."value" = 'Test Name') AND ("list_values"."list_id" = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."name" IS NULL) AND ("list_values"."list_id" IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.1ms)[0m  [1mSELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."value" IS NULL) AND ("list_values"."list_id" IS NULL) LIMIT 1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects"."id" FROM "projects" WHERE ("projects"."number" IS NULL) LIMIT 1
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("client_id", "created_at", "name", "number", "rate_internal", "updated_at") VALUES (1, '2010-05-20 16:10:00.213443', 'Test Project', '9999', 0.0, '2010-05-20 16:10:00.213443')
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "projects" WHERE (name like '%1001%' or number like '%1001%')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "projects" WHERE (name like '%grounds%' or number like '%grounds%')[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "activities" SET "end_time" = '2010-05-20 18:15:00.000000', "hours" = 1.25, "start_time" = '2010-05-20 17:00:00.000000', "updated_at" = '2010-05-20 16:17:53.467437' WHERE ("activities"."id" = 1)[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE ("activities"."id" = 1) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("created_at", "name", "short_name", "updated_at") VALUES ('2010-05-20 16:17:53.512123', 'Test Client', 'TC', '2010-05-20 16:17:53.512123')[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT "clients"."id" FROM "clients" WHERE ("clients"."name" = 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients"."id" FROM "clients" WHERE ("clients"."short_name" = 'TC') LIMIT 1[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists"."id" FROM "lists" WHERE ("lists"."name" IS NULL) LIMIT 1
+  [1m[36mList Load (0.1ms)[0m  [1mSELECT "lists"."id" FROM "lists" WHERE ("lists"."name" = 'Test List') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "lists" ("created_at", "name", "position", "updated_at") VALUES ('2010-05-20 16:17:53.532113', 'Test List', NULL, '2010-05-20 16:17:53.532113')
+  [1m[36mList Load (0.1ms)[0m  [1mSELECT "lists"."id" FROM "lists" WHERE ("lists"."name" = 'Test List') LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."name" = 'Test Name') AND ("list_values"."list_id" = 1) LIMIT 1
+  [1m[36mListValue Load (0.1ms)[0m  [1mSELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."value" = 'Test Name') AND ("list_values"."list_id" = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.1ms)[0m  SELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."name" = 'Test Name') AND ("list_values"."list_id" = 1) LIMIT 1
+  [1m[36mListValue Load (0.1ms)[0m  [1mSELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."value" = 'TN') AND ("list_values"."list_id" = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT "list_values".* FROM "list_values" WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "list_values" ("created_at", "list_id", "name", "position", "updated_at", "value") VALUES ('2010-05-20 16:17:53.558245', 1, 'Test Name', 2, '2010-05-20 16:17:53.558245', 'TN')[0m
+  [1m[35mListValue Load (0.1ms)[0m  SELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."name" = 'Test Name') AND ("list_values"."list_id" = 2) LIMIT 1
+  [1m[36mListValue Load (0.1ms)[0m  [1mSELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."value" = 'TN') AND ("list_values"."list_id" = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.1ms)[0m  SELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."name" = 'Test Name') AND ("list_values"."list_id" = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."value" = 'TN') AND ("list_values"."list_id" = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."name" IS NULL) AND ("list_values"."list_id" IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.1ms)[0m  [1mSELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."value" IS NULL) AND ("list_values"."list_id" IS NULL) LIMIT 1[0m
+  [1m[35mListValue Load (0.1ms)[0m  SELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."name" = 'Test Name') AND ("list_values"."list_id" = 1) LIMIT 1
+  [1m[36mListValue Load (0.1ms)[0m  [1mSELECT "list_values"."id" FROM "list_values" WHERE ("list_values"."value" = 'Test Name') AND ("list_values"."list_id" = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT "list_values".* FROM "list_values" WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "list_values" ("created_at", "list_id", "name", "position", "updated_at", "value") VALUES ('2010-05-20 16:17:53.573840', 1, 'Test Name', 2, '2010-05-20 16:17:53.573840', 'Test Name')[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects"."id" FROM "projects" WHERE ("projects"."number" IS NULL) LIMIT 1
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("client_id", "created_at", "name", "number", "rate_internal", "updated_at") VALUES (1, '2010-05-20 16:17:53.593608', 'Test Project', '9999', 0.0, '2010-05-20 16:17:53.593608')
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects"."id" FROM "projects" WHERE ("projects"."number" = '9999') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "projects" WHERE (name like '%1001%' or number like '%1001%')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "projects" WHERE (name like '%grounds%' or number like '%grounds%')[0m
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateClients (20100418225211)
+Migrating to CreateProjects (20100418225354)
+Migrating to CreateLists (20100424181757)
+Migrating to CreateListValues (20100424181830)
+Migrating to CreateActivities (20100504143447)
+Migrating to DeviseCreateUsers (20100522024339)
+Migrating to AddUsernameToUsers (20100522040123)
+Migrating to AddUserIdToActivity (20100522153014)
+Migrating to CreateInvoices (20100523010938)
+Migrating to ChangeInvoiceDateNames (20100524020535)
+Migrating to AddTotalsToInvoices (20100526182922)
+Migrating to AddBillingNameToProjects (20100611195257)
+Migrating to AddBillingNameToUsers (20100611195616)
+Migrating to AddBillingContactToClients (20100618210741)
+Migrating to AddFullNameToUsers (20100618211316)
+Migrating to AddClientToInvoice (20100618212530)
+Migrating to AddPrefsToUser (20100621164848)
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.1ms)[0m  [1mdescribe `activities`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `activities`
+  [1m[36mSQL (2.4ms)[0m  [1mdescribe `clients`[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW KEYS FROM `clients`
+  [1m[36mSQL (2.9ms)[0m  [1mdescribe `invoices`[0m
+  [1m[35mSQL (1.3ms)[0m  SHOW KEYS FROM `invoices`
+  [1m[36mSQL (1.5ms)[0m  [1mdescribe `list_values`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `list_values`
+  [1m[36mSQL (1.8ms)[0m  [1mdescribe `lists`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `lists`
+  [1m[36mSQL (1.6ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW KEYS FROM `projects`
+  [1m[36mSQL (2.1ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (1.7ms)[0m  SHOW KEYS FROM `users`
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mClient Load (0.4ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `clients`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 15:39:25', 'Test Client', 'TC', '2010-07-08 15:39:25')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mdescribe `lists`[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 15:39:25', 'Test List', NULL, '2010-07-08 15:39:25')
+  [1m[36mSQL (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `list_values`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:39:25', 1, 'Test Name', 2, '2010-07-08 15:39:25', 'TN')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:39:25', 1, 'Test Name', 2, '2010-07-08 15:39:25', 'Test Name')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 15:39:25', 'Test Project', '9999', 0.0, '2010-07-08 15:39:25')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `list_values`[0m
+  Processing by ListValuesController#create as HTML
+  Parameters: {"list_value"=>{"created_at"=>2010-07-08 15:39:32 UTC, "id"=>980190962, "list_id"=>1, "name"=>"MyString", "position"=>1, "updated_at"=>2010-07-08 15:39:32 UTC, "value"=>"MyString"}}
+Completed   in 1ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `list_values`[0m
+  Processing by ListValuesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1
+  Processing by ListValuesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Completed   in 0ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1[0m
+  Processing by ListValuesController#index as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1
+  Processing by ListValuesController#new as HTML
+Completed   in 0ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1[0m
+  Processing by ListValuesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1
+  Processing by ListValuesController#update as HTML
+  Parameters: {"list_value"=>{"created_at"=>2010-07-08 15:39:32 UTC, "id"=>980190962, "list_id"=>1, "name"=>"MyString", "position"=>1, "updated_at"=>2010-07-08 15:39:32 UTC, "value"=>"MyString"}, "id"=>"980190962"}
+Completed   in 0ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM `lists`
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"created_at"=>2010-07-08 15:39:32 UTC, "id"=>1, "name"=>"MyString", "position"=>1, "updated_at"=>2010-07-08 15:39:32 UTC}}
+Completed   in 1ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM `lists`
+  Processing by ListsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 0ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1[0m
+  Processing by ListsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1
+  Processing by ListsController#index as HTML
+Completed   in 0ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1[0m
+  Processing by ListsController#new as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1
+  Processing by ListsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 0ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1[0m
+  Processing by ListsController#update as HTML
+  Parameters: {"list"=>{"created_at"=>2010-07-08 15:39:32 UTC, "id"=>1, "name"=>"MyString", "position"=>1, "updated_at"=>2010-07-08 15:39:32 UTC}, "id"=>"1"}
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by UserPreferencesController#edit as HTML
+Completed   in 1ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by UserPreferencesController#update as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `clients`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 15:41:45', 'Test Client', 'TC', '2010-07-08 15:41:45')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mdescribe `lists`[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 15:41:45', 'Test List', NULL, '2010-07-08 15:41:45')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.6ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.4ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `list_values`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:41:46', 1, 'Test Name', 2, '2010-07-08 15:41:46', 'TN')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.9ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (1.8ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:41:46', 1, 'Test Name', 2, '2010-07-08 15:41:46', 'Test Name')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (2.4ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 15:41:46', 'Test Project', '9999', 0.0, '2010-07-08 15:41:46')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `list_values`[0m
+  Processing by ListValuesController#create as HTML
+  Parameters: {"list_value"=>{"created_at"=>2010-07-08 15:41:52 UTC, "id"=>980190962, "list_id"=>1, "name"=>"MyString", "position"=>1, "updated_at"=>2010-07-08 15:41:52 UTC, "value"=>"MyString"}}
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `list_values`[0m
+  Processing by ListValuesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1
+  Processing by ListValuesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Completed   in 0ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1[0m
+  Processing by ListValuesController#index as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1
+  Processing by ListValuesController#new as HTML
+Completed   in 1ms
+  [1m[36mSQL (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1[0m
+  Processing by ListValuesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (`list_values`.`id` = 980190962) LIMIT 1
+  Processing by ListValuesController#update as HTML
+  Parameters: {"list_value"=>{"created_at"=>2010-07-08 15:41:52 UTC, "id"=>980190962, "list_id"=>1, "name"=>"MyString", "position"=>1, "updated_at"=>2010-07-08 15:41:52 UTC, "value"=>"MyString"}, "id"=>"980190962"}
+Completed   in 0ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM `lists`
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"created_at"=>2010-07-08 15:41:52 UTC, "id"=>1, "name"=>"MyString", "position"=>1, "updated_at"=>2010-07-08 15:41:52 UTC}}
+Completed   in 1ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT COUNT(*) AS count_id FROM `lists`
+  Processing by ListsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 0ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1[0m
+  Processing by ListsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1
+  Processing by ListsController#index as HTML
+Completed   in 0ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1[0m
+  Processing by ListsController#new as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1
+  Processing by ListsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 0ms
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.* FROM `lists` WHERE (`lists`.`id` = 1) LIMIT 1[0m
+  Processing by ListsController#update as HTML
+  Parameters: {"list"=>{"created_at"=>2010-07-08 15:41:52 UTC, "id"=>1, "name"=>"MyString", "position"=>1, "updated_at"=>2010-07-08 15:41:52 UTC}, "id"=>"1"}
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by UserPreferencesController#edit as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  Processing by UserPreferencesController#update as HTML
+Completed   in 0ms
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mClient Load (0.4ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mdescribe `clients`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 15:46:01', 'Test Client', 'TC', '2010-07-08 15:46:01')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (1.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `lists`[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 15:46:01', 'Test List', NULL, '2010-07-08 15:46:01')
+  [1m[36mSQL (1.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.9ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `list_values`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:46:02', 1, 'Test Name', 2, '2010-07-08 15:46:02', 'TN')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.4ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:46:02', 1, 'Test Name', 2, '2010-07-08 15:46:02', 'Test Name')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (1.9ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 15:46:02', 'Test Project', '9999', 0.0, '2010-07-08 15:46:02')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mdescribe `clients`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 15:49:06', 'Test Client', 'TC', '2010-07-08 15:49:06')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mdescribe `lists`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 15:49:06', 'Test List', NULL, '2010-07-08 15:49:06')
+  [1m[36mSQL (1.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `list_values`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:49:06', 1, 'Test Name', 2, '2010-07-08 15:49:06', 'TN')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.8ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:49:06', 1, 'Test Name', 2, '2010-07-08 15:49:06', 'Test Name')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 15:49:06', 'Test Project', '9999', 0.0, '2010-07-08 15:49:06')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mClient Load (0.4ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `clients`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 15:54:04', 'Test Client', 'TC', '2010-07-08 15:54:04')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mdescribe `lists`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 15:54:04', 'Test List', NULL, '2010-07-08 15:54:04')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.5ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `list_values`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:54:04', 1, 'Test Name', 2, '2010-07-08 15:54:04', 'TN')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:54:04', 1, 'Test Name', 2, '2010-07-08 15:54:04', 'Test Name')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (2.1ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 15:54:04', 'Test Project', '9999', 0.0, '2010-07-08 15:54:04')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `clients`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 15:57:25', 'Test Client', 'TC', '2010-07-08 15:57:25')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `lists`[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 15:57:25', 'Test List', NULL, '2010-07-08 15:57:25')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.4ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `list_values`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:57:25', 1, 'Test Name', 2, '2010-07-08 15:57:25', 'TN')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (1.0ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 15:57:25', 1, 'Test Name', 2, '2010-07-08 15:57:25', 'Test Name')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 15:57:25', 'Test Project', '9999', 0.0, '2010-07-08 15:57:25')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.4ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.4ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  describe `clients`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 16:05:56', 'Test Client', 'TC', '2010-07-08 16:05:56')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  describe `lists`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 16:05:56', 'Test List', NULL, '2010-07-08 16:05:56')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (1.1ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  describe `list_values`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:05:57', 1, 'Test Name', 2, '2010-07-08 16:05:57', 'TN')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.6ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:05:57', 1, 'Test Name', 2, '2010-07-08 16:05:57', 'Test Name')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1[0m
+  [1m[35mSQL (2.3ms)[0m  describe `projects`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 16:05:57', 'Test Project', '9999', 0.0, '2010-07-08 16:05:57')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')[0m
+  [1m[35mSQL (0.5ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `clients`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 16:06:44', 'Test Client', 'TC', '2010-07-08 16:06:44')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `lists`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 16:06:44', 'Test List', NULL, '2010-07-08 16:06:44')
+  [1m[36mSQL (0.6ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `list_values`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:06:44', 1, 'Test Name', 2, '2010-07-08 16:06:44', 'TN')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.6ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:06:44', 1, 'Test Name', 2, '2010-07-08 16:06:44', 'Test Name')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (1.9ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 16:06:44', 'Test Project', '9999', 0.0, '2010-07-08 16:06:44')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.4ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  describe `clients`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 16:26:57', 'Test Client', 'TC', '2010-07-08 16:26:57')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  describe `lists`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 16:26:57', 'Test List', NULL, '2010-07-08 16:26:57')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.8ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  describe `list_values`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:26:57', 1, 'Test Name', 2, '2010-07-08 16:26:57', 'TN')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.4ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:26:57', 1, 'Test Name', 2, '2010-07-08 16:26:57', 'Test Name')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1[0m
+  [1m[35mSQL (2.2ms)[0m  describe `projects`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 16:26:57', 'Test Project', '9999', 0.0, '2010-07-08 16:26:57')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mClient Load (0.4ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `clients`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 16:27:29', 'Test Client', 'TC', '2010-07-08 16:27:29')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `lists`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 16:27:29', 'Test List', NULL, '2010-07-08 16:27:29')
+  [1m[36mSQL (1.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.7ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `list_values`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:27:29', 1, 'Test Name', 2, '2010-07-08 16:27:29', 'TN')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (1.0ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.4ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:27:30', 1, 'Test Name', 2, '2010-07-08 16:27:30', 'Test Name')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (1.8ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 16:27:30', 'Test Project', '9999', 0.0, '2010-07-08 16:27:30')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (0.6ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mClient Load (0.4ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `clients`[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 16:29:14', 'Test Client', 'TC', '2010-07-08 16:29:14')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mdescribe `lists`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 16:29:14', 'Test List', NULL, '2010-07-08 16:29:14')
+  [1m[36mSQL (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `list_values`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:29:14', 1, 'Test Name', 2, '2010-07-08 16:29:14', 'TN')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:29:14', 1, 'Test Name', 2, '2010-07-08 16:29:14', 'Test Name')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (2.1ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 16:29:14', 'Test Project', '9999', 0.0, '2010-07-08 16:29:14')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mClient Load (0.4ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `clients`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 16:30:16', 'Test Client', 'TC', '2010-07-08 16:30:16')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mdescribe `lists`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 16:30:16', 'Test List', NULL, '2010-07-08 16:30:16')
+  [1m[36mSQL (0.9ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.7ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `list_values`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:30:16', 1, 'Test Name', 2, '2010-07-08 16:30:16', 'TN')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (1.1ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.4ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:30:16', 1, 'Test Name', 2, '2010-07-08 16:30:16', 'Test Name')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (2.3ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 16:30:16', 'Test Project', '9999', 0.0, '2010-07-08 16:30:16')
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `activities` SET `end_time` = '2010-07-08 18:15:00', `hours` = 1.25, `start_time` = '2010-07-08 17:00:00', `updated_at` = '2010-07-08 16:36:39' WHERE (`activities`.`id` = 1)[0m
+  [1m[35mInvoice Load (0.3ms)[0m  SELECT `invoices`.* FROM `invoices` WHERE (start_date <= '2010-05-04' AND end_date >= '2010-05-04') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (`activities`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` IS NULL) LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mClient Load (0.4ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  describe `clients`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `clients` (`billing_email`, `billing_name`, `created_at`, `name`, `short_name`, `updated_at`) VALUES (NULL, NULL, '2010-07-08 16:36:39', 'Test Client', 'TC', '2010-07-08 16:36:39')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.`id` FROM `clients` WHERE (`clients`.`name` = BINARY 'Test Client') LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.`id` FROM `clients` WHERE (`clients`.`short_name` = BINARY 'TC') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  describe `lists`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `lists` (`created_at`, `name`, `position`, `updated_at`) VALUES ('2010-07-08 16:36:39', 'Test List', NULL, '2010-07-08 16:36:39')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT `lists`.`id` FROM `lists` WHERE (`lists`.`name` = BINARY 'Test List') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [1m[35mSQL (1.9ms)[0m  describe `list_values`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:36:39', 1, 'Test Name', 2, '2010-07-08 16:36:39', 'TN')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 2) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 2) LIMIT 1
+  [1m[36mListValue Load (0.2ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'TN') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1[0m
+  [1m[35mListValue Load (0.2ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` IS NULL) AND (`list_values`.`list_id` IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`name` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1
+  [1m[36mListValue Load (0.3ms)[0m  [1mSELECT `list_values`.`id` FROM `list_values` WHERE (`list_values`.`value` = BINARY 'Test Name') AND (`list_values`.`list_id` = 1) LIMIT 1[0m
+  [1m[35mListValue Load (0.3ms)[0m  SELECT `list_values`.* FROM `list_values` WHERE (list_id = 1) ORDER BY position DESC LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `list_values` (`created_at`, `list_id`, `name`, `position`, `updated_at`, `value`) VALUES ('2010-07-08 16:36:40', 1, 'Test Name', 2, '2010-07-08 16:36:40', 'Test Name')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1[0m
+  [1m[35mSQL (2.2ms)[0m  describe `projects`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `projects` (`billing_name`, `client_id`, `created_at`, `name`, `number`, `rate_internal`, `updated_at`) VALUES (NULL, 1, '2010-07-08 16:36:40', 'Test Project', '9999', 0.0, '2010-07-08 16:36:40')[0m
+  [1m[35mSQL (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.`id` FROM `projects` WHERE (`projects`.`number` = BINARY '9999') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%1001%' or number like '%1001%')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `projects` WHERE (name like '%grounds%' or number like '%grounds%')[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
