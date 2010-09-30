@@ -30,7 +30,7 @@ class Project < ActiveRecord::Base
   def self.invoice_totals(start_date, end_date, user_id)
     select = 'projects.*, SUM(activities.hours) AS total_hours'
     select += ', SUM(activities.hours) * projects.rate_internal AS cost_internal'
-    order("projects.number").joins(:activities).select(select).where("activities.activity_date >= ? AND activities.activity_date <= ? AND activities.user_id = ? AND activities.bill_type = ?", start_date, end_date, user_id, "1").group("activities.project_id")    
+    order("projects.number").joins(:activities).select(select).where("activities.activity_date >= ? AND activities.activity_date <= ? AND activities.user_id = ? AND activities.bill_type = ?", start_date, end_date, user_id, "1").group("projects.id")    
   end
   
 end
