@@ -31,7 +31,7 @@
       <th>Projects:</th>
       <td>
         <% @projects.each_with_index do |project| %>
-          <%= project.number %> - <%= project.client_short_name %>: <%= project.name %><br />
+          <%= project.project_number %> - <%= project.client_short_name %>: <%= project.project_name %><br />
         <% end %>
       </td>
     </tr>
