@@ -30,7 +30,9 @@
     <tr>
       <th>Projects:</th>
       <td>
-        &nbsp;
+        <% @projects.each do |project| %>
+          <%= project.billing_name %><br />
+        <% end %>
       </td>
     </tr>
 </table>
