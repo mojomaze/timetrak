@@ -57,12 +57,12 @@ class Activity < ActiveRecord::Base
   
   def self.hours_by_service
     select = 'activities.id, activities.service, SUM(activities.hours) AS total_hours'
-    order("activities.service").select(select).group("activities.service")
+    order("activities.service").select(select).group("activities.service, activities.id")
   end
   
   def self.hours_by_activity_type
     select = 'activities.id, activities.activity_type, SUM(activities.hours) AS total_hours'
-    order("activities.activity_type").select(select).group("activities.activity_type")
+    order("activities.activity_type").select(select).group("activities.activity_type, activities.id")
   end
   
   def self.hours_by_project
