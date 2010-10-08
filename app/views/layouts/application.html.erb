@@ -2,15 +2,16 @@
 <html>
 <head>
   <title>Timetrak</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag "app/base/app.css", "app/base/detail.css", "app/base/lists.css"  %>
+  <%= stylesheet_link_tag "activities.css", "clients.css", "invoices.css", "projects.css"  %>
   <%= stylesheet_link_tag "jquery/redmond/jquery-ui-1.8.1.custom.css" %>
   <%= stylesheet_link_tag "jquery-timeentry/jquery.timeentry.css" %>
   <%= stylesheet_link_tag "jquery-loadmask/jquery.loadmask.css" %>
   <%= javascript_include_tag "jquery/jquery-1.4.2.min.js", "jquery/jquery-ui-1.8.1.custom.min.js", "jquery.rails.js", "application.js" %>
   <%= javascript_include_tag "jquery-timeentry/jquery.timeentry.js" %>
   <%= javascript_include_tag "jquery-loadmask/jquery.loadmask.js" %>
-  <%= csrf_meta_tag %>
   <%= yield :head %>
+  <%= csrf_meta_tag %>
 </head>
 <body>
   <div class="nav-top-right nav-top">
@@ -29,6 +30,7 @@
     <span class="nav-item"><%= link_to "Calendar",  calendar_activities_path %></span> |
     <span class="nav-item"><%= link_to "Projects", projects_path %></span> |
     <span class="nav-item"><%= link_to "Clients", clients_path %></span> |
+    <span class="nav-item"><%= link_to "Users", users_path %></span> |
     <span class="nav-item"><%= link_to "Lists", lists_path %></span>
   <% end %>
   </div>

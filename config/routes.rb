@@ -13,6 +13,12 @@ Timetrak::Application.routes.draw do |map|
   end
 
   devise_for :users, :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
+  
+  resources :users do 
+    collection do 
+      post :list_action 
+    end
+  end
 
   resources :activities do
     collection do
