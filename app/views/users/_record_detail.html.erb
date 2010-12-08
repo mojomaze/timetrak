@@ -1,0 +1,25 @@
+<div class="detail-edit-btn">
+  <%= link_to "Edit", edit_user_path(@user), :remote => true,
+                :class => "gray-btn both-round detail-edit", :id => "user_edit_btn" %>
+    <span id="load_edit" class="loading">Loading...</span>
+</div>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <td><%= @user.username %></td>
+  </tr>
+  <tr>
+    <th>Full Name</th>
+    <td><%= @user.full_name %></td>
+  </tr>
+  <tr>
+    <th>Billing Name</th>
+    <td><%= @user.billing_name %></td>
+  </tr>
+  <tr>
+    <th>Email</th>
+    <td><%= @user.email %></td>
+  </tr>
+
+</table>

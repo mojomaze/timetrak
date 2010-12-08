@@ -1,0 +1,4 @@
+$("#<%= singular_table_name %>_detail").html("<%%= escape_javascript(render('record_detail')) %>").effect("highlight");
+$("#<%= singular_table_name %>_body").html("<%%= escape_javascript(render('record_body')) %>");
+$("#detail_actions").html("<%%= escape_javascript(render('detail_actions')) %>");
+$.addEditListeners();

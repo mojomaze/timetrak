@@ -1,0 +1,32 @@
+<%% content_for :head do %>
+  <%%= stylesheet_link_tag "app/<%= plural_table_name %>/<%= plural_table_name %>.css" %>
+  <%%= javascript_include_tag "app/<%= plural_table_name %>/list.js" %>
+<%% end %>
+
+<div class="shadow-right">
+  <div class="list-heading <%= singular_table_name %>-heading">
+    <h1><%= plural_table_name.titleize %></h1>
+    <%%= render "list_actions" %>
+  </div>
+
+  <div class="list-items <%= singular_table_name %>-items">
+    <form id="<%= plural_table_name %>_form" method="post" data-remote="true" action="/<%= plural_table_name %>/list_action">
+      <%%= hidden_field_tag 'action_type' %>
+      <table>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <% for attribute in attributes -%>
+              <th><%%= sortable "<%= attribute.name %>" %></th>
+            <% end -%>
+          </tr>
+        </thead>
+        <tbody id="<%= plural_table_name %>-list">
+          <%%= render @<%= plural_table_name %> %>
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+  <%%= will_paginate @<%= plural_table_name %> %>
+</div>

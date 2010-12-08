@@ -1,0 +1,135 @@
+body { background-color: #fff; color: #606060; margin: 10px; padding: 0; font-size:100%; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif; padding: 0px;
+}
+
+/*  Error formatting */
+.field_with_errors {
+  padding: 2px !important;
+  background-color: #F0A8A8;
+  display: table;
+}
+
+#error_explanation {
+	border: 1px solid #990000;
+  	padding: 3px;
+  	padding-bottom: 0;
+  	/*margin-bottom: 10px;*/
+  	background-color: #F0A8A8;
+/*	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;*/
+}
+
+#error_explanation h2 {
+  font-weight: bold;
+  padding: 5px;
+  font-size: 1.125em;
+  margin: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul {
+	margin: 5px;
+}
+
+#error_explanation ul li {
+  font-size: .875em;
+  list-style: circle solid;
+  margin-left: 20px;
+  color: #000;
+}
+
+.close-btn {
+	display: inline-block;
+    background: #fff url(/images/cross.png) no-repeat 0px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    height: 12px;
+	width: 12px;
+    cursor: pointer;
+	margin-right: 10px;
+}
+
+/* LOGIN PAGE*/
+div.login-form {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	border: 10px solid #ccc;
+	background-color: #FAFFFA;
+	width: 400px;
+	padding: 10px;
+}
+
+.login-form h1 {
+	font-size: 1.25em;
+	text-align: center;
+	padding: 2px;
+	margin: 0px 0px 10px;
+}
+
+.login-form div {
+	font-size: .875em;
+	padding: 5px 5px 10px 10px;
+	text-align: left;
+}
+
+
+/*  top bar navigation */
+.nav-top {
+	font-size: .8125em;
+}
+
+.nav-top-right{
+	float: right;
+}
+
+.nav-bottom {
+	clear: both;
+}
+
+.nav-top .current a {
+	text-decoration: none;
+}
+
+.loading {
+	display: none;
+	padding: 2px;
+	color: #fff;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	/*background: orange url(/images/loading.gif) no-repeat 0px;*/
+	background-color: orange;
+}
+
+.error-image {
+	display: none;
+	width: 20px;
+	height: 20px;
+	background: #fff url(/images/required.gif) no-repeat 0px;
+}
+
+.error-msg {
+  	color: red;
+	font-size: 0.725em;
+}
+.row-error {
+  	background-color: #FFEFED !important;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.shadow-right {
+	-webkit-box-shadow: #ccc 3px 3px 2px;
+    -moz-box-shadow: #ccc 3px 2px 4px;
+    box-shadow: #ccc 2px 2px 2px;
+}

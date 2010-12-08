@@ -1,0 +1,33 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag "app/users/users.css" %>
+  <%= javascript_include_tag "app/users/list.js" %>
+<% end %>
+
+<div class="shadow-right">
+  <div class="list-heading user-heading">
+    <h1>Users</h1>
+    <%= render "list_actions" %>
+  </div>
+
+  <div class="list-items user-items">
+    <form id="users_form" method="post" data-remote="true" action="/users/list_action">
+      <%= hidden_field_tag 'action_type' %>
+      <table>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+                          <th><%= sortable "username" %></th>
+                          <th><%= sortable "full_name" %></th>
+                          <th><%= sortable "billing_name" %></th>
+                          <th><%= sortable "email" %></th>
+                      </tr>
+        </thead>
+        <tbody id="users-list">
+          <%= render @users %>
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+  <%= will_paginate @users %>
+</div>

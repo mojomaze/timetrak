@@ -1,0 +1,24 @@
+<div id="action_search" class="action-section-right">
+  <%= form_tag users_path, :method => :get, :remote => false do %>
+    <span>
+      <%= text_field_tag :search, params[:search] %>
+    </span>
+    <span>
+      <%= submit_tag "Search", :name => nil %>
+    </span>
+    <span>
+      <%= link_to 'All', users_path %>
+    </span>
+  <% end %>
+  <div class="page-entries-info"><%= page_entries_info @users %></div>
+</div>
+
+
+<div id="action_links" class="action-section">
+  <span id="action_delete" class="list-action-btn gray-btn both-round">Delete</span>
+</div>
+
+<div id="select_links" class="action-section">
+  <span>Select: <span id="action_select_all" class="list-action-slect">All</span>, 
+  <span id="action_select_none" class="list-action-slect">None</span>
+</div>

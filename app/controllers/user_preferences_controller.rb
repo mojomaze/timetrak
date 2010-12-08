@@ -5,7 +5,7 @@ class UserPreferencesController < ApplicationController
 
   def update
     current_user.update_attribute(:prefs, params[:preferences])
-    @preferences = current_user.prefs
+    @preferences = current_user.preferences
     redirect_to :back
   end
 

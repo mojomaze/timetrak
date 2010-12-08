@@ -1,0 +1,6 @@
+<tr id="<%= singular_table_name %>_<%%= <%= singular_table_name %>.id %>" class="list-record">
+  <td><%%= check_box_tag 'action_id[]',<%= singular_table_name %>.id, false, :id => "<%= singular_table_name %>_action_id_#{<%= singular_table_name %>.id}" %>
+  <% for attribute in attributes -%>
+    <td class="<%= singular_table_name %>-edit"><%%= <%= singular_table_name %>.<%= attribute.name %> %></td>
+  <% end -%>
+</tr>

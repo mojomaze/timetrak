@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.0.3'
 
 # Bundle edge Rails instead:
 #gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -23,7 +23,7 @@ gem "acts-as-list"
 gem 'devise', '1.1.rc1'
 
 # controller pagination
-gem "will_paginate", "~> 3.0.pre2"
+gem "will_paginate", "3.0.pre2"
 
 # Bundle gems for certain environments:
 # gem 'rspec', :group => :test
