@@ -1,7 +1,9 @@
 set :application, "timetrak"
-set :repository,  "file://localhost/Users/mwinkler/svn/timetrak"
+set :local_repository, "file:///Users/mwinkler/Projects/SGI/1000/timetrak"
+set :repository, "file:///Users/mwinkler/Projects/SGI/1000/timetrak"
+set :branch, "master"
 
-set :scm, :subversion
+set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 set :deploy_to, "/opt/local/apache2/www/#{application}"
