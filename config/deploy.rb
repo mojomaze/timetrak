@@ -1,10 +1,15 @@
 set :application, "timetrak"
-set :local_repository, "file:///Users/mwinkler/Projects/SGI/1000/timetrak"
-set :repository, "file:///Users/mwinkler/Projects/SGI/1000/timetrak"
+default_run_options[:pty] = true  # Must be set for the password prompt from git to work
+set :repository, "git@github.com:mojomaze/timetrak.git"  # Your clone URL
+set :scm, "git"
+set :scm_command, "/usr/local/git/bin/git"
+set :local_scm_command, "git"
+set :user, "mwinkler"  # The server's user for deploys
+#set :scm_passphrase, "pray4mojo"  # The deploy user's password
+
 set :branch, "master"
 
-set :scm, :git
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+set :deploy_via, :remote_cache
 
 set :deploy_to, "/opt/local/apache2/www/#{application}"
 
