@@ -30,6 +30,7 @@ GEM
     activesupport (3.0.3)
     acts-as-list (0.1.2)
     arel (2.0.6)
+    bcrypt-ruby (2.1.2)
     builder (2.1.2)
     capistrano (2.5.19)
       highline
@@ -37,8 +38,9 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.0.0)
-    devise (1.1.rc1)
-      warden (~> 0.10.3)
+    devise (1.1.5)
+      bcrypt-ruby (~> 2.1.2)
+      warden (~> 1.0.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     highline (1.6.1)
@@ -82,7 +84,7 @@ GEM
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
-    warden (0.10.7)
+    warden (1.0.2)
       rack (>= 1.0.0)
     will_paginate (3.0.pre2)
 
@@ -92,7 +94,7 @@ PLATFORMS
 DEPENDENCIES
   acts-as-list
   capistrano
-  devise (= 1.1.rc1)
+  devise
   mysql
   rails (= 3.0.3)
   sqlite3-ruby

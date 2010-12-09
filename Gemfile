@@ -20,7 +20,7 @@ gem 'capistrano'
 gem "acts-as-list"
 #gem 'authlogic', :git => "git://github.com/odorcicd/authlogic.git", :branch => "rails3"
 
-gem 'devise', '1.1.rc1'
+gem 'devise'
 
 # controller pagination
 gem "will_paginate", "3.0.pre2"

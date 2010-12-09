@@ -13,12 +13,12 @@ set :deploy_via, :remote_cache
 
 set :deploy_to, "/opt/local/apache2/www/#{application}"
 
-set :default_environment, { 
-  'PATH' => "/Users/mwinkler/.rvm/bin:/Users/mwinkler/.rvm/gems/ruby-1.9.2-preview3/bin:/Users/mwinkler/.rvm/gems/ruby-1.9.2-preview3@global/bin:/Users/mwinkler/.rvm/rubies/ruby-1.9.2-preview3/bin:$PATH}",
-  'RUBY_VERSION' => 'ruby 1.9.2-preview3',
-  'GEM_HOME' => '/Users/mwinkler/.rvm/gems/ruby-1.9.2-preview3',
-  'GEM_PATH' => '/Users/mwinkler/.rvm/gems/ruby-1.9.2-preview3' 
-}
+# set :default_environment, { 
+#   'PATH' => "/Users/mwinkler/.rvm/bin:/Users/mwinkler/.rvm/gems/ruby-1.9.2-p0@rails3/bin:/Users/mwinkler/.rvm/gems/ruby-1.9.2-p0@global/bin:/Users/mwinkler/.rvm/rubies/ruby-1.9.2-p0/bin:$PATH}",
+#   'RUBY_VERSION' => 'ruby 1.9.2-p0',
+#   'GEM_HOME' => '/Users/mwinkler/.rvm/gems/ruby-1.9.2-p0',
+#   'GEM_PATH' => '/Users/mwinkler/.rvm/gems/ruby-1.9.2-p0' 
+# }
 
 # alternative syntax for single server
 server "localhost", :app, :web, :db, :primary => true
