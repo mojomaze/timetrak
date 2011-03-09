@@ -1,15 +1,15 @@
 10
 
 dir
-0
+27
 file://localhost/Users/mwinkler/svn/timetrak/lib/generators/jquery/active_record/templates
 file://localhost/Users/mwinkler/svn/timetrak
-add
 
 
 
-
-
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
 
 
 
@@ -31,19 +31,100 @@ file
 
 
 
-add
+
+2010-10-09T22:18:59.000000Z
+c6e77b30b9d00cf18a6aaf31e86c6887
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+811
 
 module.rb
 file
 
 
 
-add
+
+2010-10-08T18:04:16.000000Z
+51252033fbf43b8c3dd760bdfd297af0
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+126
 
 migration.rb
 file
 
 
 
-add
+
+2010-10-08T17:42:51.000000Z
+1a25ca238d125a636acf6e04edcffed3
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+351
 

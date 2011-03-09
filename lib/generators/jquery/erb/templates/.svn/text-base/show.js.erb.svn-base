@@ -1,0 +1,2 @@
+$("#<%= singular_table_name %>_detail").html("<%%= escape_javascript(render('record_detail')) %>");
+$.addEditListeners();

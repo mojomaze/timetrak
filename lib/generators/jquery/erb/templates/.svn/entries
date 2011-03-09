@@ -1,15 +1,15 @@
 10
 
 dir
-0
+27
 file://localhost/Users/mwinkler/svn/timetrak/lib/generators/jquery/erb/templates
 file://localhost/Users/mwinkler/svn/timetrak
-add
 
 
 
-
-
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
 
 
 
@@ -31,117 +31,576 @@ file
 
 
 
-add
+
+2010-10-07T21:59:34.000000Z
+124294eb03cf2f8a04269766a902e698
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1068
 
 _detail_info.html.erb
 file
 
 
 
-add
+
+2010-10-07T18:30:39.000000Z
+7e8b57497b448c8a1c2677f7c9d6fb96
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+130
 
 _record.html.erb
 file
 
 
 
-add
+
+2010-10-07T20:48:45.000000Z
+d55326184ed53e750b5514afa4849eb6
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+419
 
 _error_messages.html.erb
 file
 
 
 
-add
+
+2010-10-07T18:32:19.000000Z
+ee8f5c5c22965bf8d871fa79a5d2ade3
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+328
 
 show.html.erb
 file
 
 
 
-add
+
+2010-10-07T22:00:01.000000Z
+c563d52ec9ebf54a5af8e660ca1d035d
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1704
 
 _detail_actions.html.erb
 file
 
 
 
-add
+
+2010-10-07T18:29:04.000000Z
+d97f7af7b6b7c8df1d67e8fbb8f5467d
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+126
 
 edit.html.erb
 file
 
 
 
-add
+
+2010-10-07T19:29:31.000000Z
+3d455f5ac01dc5ca5b63a8bb356a33aa
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+176
 
 show.js.erb
 file
 
 
 
-add
+
+2010-10-07T21:47:07.000000Z
+6591d9842cddaf59ac71b0f733ebd83d
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+121
 
 new.html.erb
 file
 
 
 
-add
-
-_record_body.html.erb
-file
+
+2010-10-07T19:36:13.000000Z
+891cb304426c6e871c9abf3fe0be54e4
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
 
 
 
-add
-
-_list_actions.html.erb
-file
 
 
 
-add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+118
 
 update.js.erb
 file
 
 
 
-add
+
+2010-10-07T19:37:43.000000Z
+9f4800c187639f23197e77c091fd9147
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+319
+
+_list_actions.html.erb
+file
+
+
+
+
+2010-10-07T18:39:01.000000Z
+64c99e0c1f29bd38a1c29a0efcdadfbb
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+945
+
+_record_body.html.erb
+file
+
+
+
+
+2010-10-07T19:11:11.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
 
 edit.js.erb
 file
 
 
 
-add
+
+2010-10-07T19:29:42.000000Z
+223867f1fc7c0c484e2111a78e87b895
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+112
 
 _record_detail.html.erb
 file
 
 
 
-add
+
+2010-10-07T22:59:51.000000Z
+b75cccefed8bdcd1d2ea5599b06a7204
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+506
 
 error.js.erb
 file
 
 
 
-add
+
+2010-10-07T19:29:58.000000Z
+ffaa22cb55657c1f377d2b88f10fcb42
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+171
 
 destroy.js.erb
 file
 
 
 
-add
+
+2010-10-07T21:46:43.000000Z
+76a6c1e22ba68509389138a655a219ba
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+105
 
 _form.html.erb
 file
 
 
 
-add
+
+2010-10-07T21:22:21.000000Z
+0c2ef9f971318ab03d2f76014b45b1e7
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1106
 

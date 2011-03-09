@@ -1,14 +1,14 @@
 10
 
 dir
-5
+26
 file://localhost/Users/mwinkler/svn/timetrak/db/migrate
 file://localhost/Users/mwinkler/svn/timetrak
 
 
 
-2010-06-19T17:37:42.518559Z
-3
+2010-09-13T23:27:42.615046Z
+14
 mwinkler
 
 
@@ -94,40 +94,6 @@ mwinkler
 
 283
 
-20100418225211_create_clients.rb
-file
-
-
-
-
-2010-06-16T19:22:11.000000Z
-fb8071fdd9543f28f6b6eafda2114418
-2010-06-16T19:18:59.618885Z
-1
-mwinkler
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-226
-
 20100418225354_create_projects.rb
 file
 
@@ -161,6 +127,40 @@ mwinkler
 
 
 334
+
+20100418225211_create_clients.rb
+file
+
+
+
+
+2010-06-16T19:22:11.000000Z
+fb8071fdd9543f28f6b6eafda2114418
+2010-06-16T19:18:59.618885Z
+1
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+226
 
 20100611195616_add_billing_name_to_users.rb
 file
@@ -196,40 +196,6 @@ mwinkler
 
 187
 
-20100913210439_add_total_non_billed_to_invoices.rb
-file
-14
-
-
-
-2010-09-13T21:05:17.000000Z
-e68c5663c0fe85aed7579a44c9e9b07a
-2010-09-13T23:27:42.615046Z
-14
-mwinkler
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-253
-
 20100522024339_devise_create_users.rb
 file
 
@@ -264,16 +230,16 @@ mwinkler
 
 638
 
-20100526182922_add_totals_to_invoices.rb
+20100913210439_add_total_non_billed_to_invoices.rb
 file
 
 
 
 
-2010-06-16T19:22:11.000000Z
-bfa2c0b188080af39a824eeef84276a8
-2010-06-16T19:18:59.618885Z
-1
+2010-09-13T21:05:17.000000Z
+e68c5663c0fe85aed7579a44c9e9b07a
+2010-09-13T23:27:42.615046Z
+14
 mwinkler
 
 
@@ -296,7 +262,7 @@ mwinkler
 
 
 
-387
+253
 
 20100618210741_add_billing_contact_to_clients.rb
 file
@@ -331,6 +297,40 @@ mwinkler
 
 
 288
+
+20100526182922_add_totals_to_invoices.rb
+file
+
+
+
+
+2010-06-16T19:22:11.000000Z
+bfa2c0b188080af39a824eeef84276a8
+2010-06-16T19:18:59.618885Z
+1
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+387
 
 20100504143447_create_activities.rb
 file
@@ -470,7 +470,7 @@ mwinkler
 
 20100621164848_add_prefs_to_user.rb
 file
-6
+
 
 
 

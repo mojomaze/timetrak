@@ -52,22 +52,22 @@ class Activity < ActiveRecord::Base
   
   def self.hours_by_user
     select = 'users.id, users.username, SUM(activities.hours) AS total_hours'
-    order("users.username").joins(:user).select(select).group("users.id, users.username")
+    order("users.username").joins(:user).select(select).group("users.id")
   end
   
   def self.hours_by_service
     select = 'activities.id, activities.service, SUM(activities.hours) AS total_hours'
-    order("activities.service").select(select).group("activities.service, activities.id")
+    order("activities.service").select(select).group("activities.service")
   end
   
   def self.hours_by_activity_type
     select = 'activities.id, activities.activity_type, SUM(activities.hours) AS total_hours'
-    order("activities.activity_type").select(select).group("activities.activity_type, activities.id")
+    order("activities.activity_type").select(select).group("activities.activity_type")
   end
   
   def self.hours_by_project
     select = 'projects.id, projects.number, SUM(activities.hours) AS total_hours'
-    order("projects.number").joins(:project).select(select).group("projects.id, projects.number")
+    order("projects.number").joins(:project).select(select).group("projects.id")
   end
   
   # virtual attibute to hold invoice_id during validation when saving from invoice entry

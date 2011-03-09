@@ -1,0 +1,190 @@
+/* LISTS */
+
+.list-heading {
+	width: 100%;
+	padding: 5px 0px 5px 0px;
+	margin-top: 10px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.list-heading h1 {
+	font-size: 1em;
+	color: darkblue;
+	padding: 0px 0px 0px 10px;
+	margin: 2px 0px 3px 0px;
+}
+
+.action-section {
+	padding: 0px 0px 0px 10px;
+	font-size: .8125em;
+}
+
+.action-section-right {
+	float: right;
+	font-size: .8125em;
+	margin-right: 20px;
+	margin-top: -20px;	
+}
+
+.page-entries-info {
+	font-size: .780em;
+	padding: 10px 5px 5px 2px;
+}
+
+.action-section a {
+	text-decoration: none;
+	color: #606060;
+}
+
+/* Release Lists */
+.list-action-btn {
+	float: left;
+}
+
+.list-action-button {
+	cursor: pointer;
+	display: block;
+	border: 1px solid #ccc;
+	background-color: #eee;
+	float: left;
+	width: 60px;
+	height: 20px;
+	margin: 5px 0px 5px 0px;
+	padding-top: 1px;
+	text-align: center;
+}
+
+.list-action-button:hover {
+	background-color: darkblue;
+	color: #fff;
+}
+
+.left-round {
+	-moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    -khtml-border-radius: 3px 0 0 3px;
+}
+
+.no-round {
+	-moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -khtml-border-radius: 0;
+}
+
+.right-round {
+	-moz-border-radius: 0px 3px 3px 0;
+    -webkit-border-radius: 0px 3px 3px 0;
+    border-radius: 0px 3px 3px 0;
+    -khtml-border-radius: 0px 3px 3px 0;
+}
+
+.both-round {
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+
+
+.gray-btn {
+    display: inline-block;
+    background: transparent url(../images/btn-gray.png) repeat-x 0 -4px;
+    border: 1px solid #ccc;
+    padding: 2px 6px 4px;
+    margin: 4px 0;
+    line-height: 16px;
+    cursor: pointer;
+    /*letter-spacing: -1px; /* Optional- Remove if you don't like it */
+}
+
+.gray-btn:hover {
+    background: transparent url(../images/btn-gray.png) repeat-x 0 -30px; /* Adjust this value accordingly, the lower it goes, the darker the hover state. Do not go past -80px */
+	border: 1px solid #848484;
+	color: #242424;
+}
+
+.gray-btn:active {
+    background: transparent url(../images/btn-gray.png) repeat-x 0 -120px; /* Adjust this value accordingly, the lower it goes, the lighter the pressed state. Do not go past -140px */
+    outline: none;
+	color: #242424;
+}
+
+#select_links {
+	clear: both;
+	cursor: default;
+	padding-left: 15px;
+	font-size: .688em;
+}
+
+span.list-action-slect {
+	cursor: pointer;
+}
+
+span.list-action-slect:hover {
+	font-style: bold;
+	color: darkblue;
+	text-decoration: underline;
+}
+
+.list-items {
+	width: 100%;
+	/*padding: 10px 0px 5px 8px;*/
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+	font-size: .6875em;
+}
+
+.list-items table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.list-items table, .list-items th, .list-items td {
+	border: 1px solid #eee;
+	padding: 3px;
+}
+
+.list-items th {
+	cursor: default;
+	text-align: left;
+}
+
+.list-items a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.list-items th .current {
+  padding-right: 15px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.list-items th .asc {
+  background-image: url(/images/bullet_arrow_up.png);
+}
+
+.list-items th .desc {
+  background-image: url(/images/bullet_arrow_down.png);
+}
+
+.list-items th.action-column {
+	width: 10px;
+}
+
+.list-items tr {
+	cursor: pointer;
+}
+
+.list-items tr.over {
+	background-color: lightyellow !important;
+}
+
+.list-items td {
+	/*background-color: #FAFFFA;*/
+}

@@ -1,0 +1,36 @@
+<%= form_for(@user, :remote => true, :html => { :id => "user_edit_form" }) do |f| %>
+  <table>
+    <tr><td id="errors" colspan="2"><%= render "error_messages", :target => @user %></td></tr>
+          <tr>
+        <th><%= f.label :username %></th>
+        <td><%= f.text_field :username %></td>
+      </tr>
+          <tr>
+        <th><%= f.label :full_name %></th>
+        <td><%= f.text_field :full_name %></td>
+      </tr>
+          <tr>
+        <th><%= f.label :billing_name %></th>
+        <td><%= f.text_field :billing_name %></td>
+      </tr>
+          <tr>
+        <th><%= f.label :email %></th>
+        <td><%= f.text_field :email %></td>
+      </tr>
+        <tr>
+      <th></th>
+      <td>
+        <span id="detail_form_actions">
+          <%= f.submit %> or 
+          <% if @user.new_record? %>
+            <%= link_to "Cancel", users_path, :id => "cancel_edit_item" %>
+          <% else %>
+            <%= link_to "Cancel", user_path(@user), :remote => true, :id => "cancel_edit_item" %>
+          <% end %>
+        </span>
+        <span id="load_cancel" class="loading">Canceling...</span>
+        <span id="load_save" class="loading">Saving...</span>
+      </td>
+    </tr>
+  </table>
+<% end %>

@@ -1,14 +1,14 @@
 10
 
 dir
-20
-file://localhost/Users/mwinkler/svn/timetrak/public/javascripts/jquery
+27
+file://localhost/Users/mwinkler/svn/timetrak/lib/generators/jquery/install/templates/public/javascripts/jquery
 file://localhost/Users/mwinkler/svn/timetrak
 
 
 
-2010-09-18T04:02:03.035477Z
-15
+2011-02-07T20:12:45.754159Z
+27
 mwinkler
 
 
@@ -34,8 +34,8 @@ file
 
 2010-06-16T19:22:11.000000Z
 e4258aff163c4740a6eb6a53141eb12a
-2010-06-16T19:18:59.618885Z
-1
+2011-02-07T20:12:45.754159Z
+27
 mwinkler
 has-props
 
@@ -68,8 +68,8 @@ file
 
 2010-06-16T19:22:11.000000Z
 10092eee563dec2dca82b77d2cf5a1ae
-2010-06-16T19:18:59.618885Z
-1
+2011-02-07T20:12:45.754159Z
+27
 mwinkler
 has-props
 

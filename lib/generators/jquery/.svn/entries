@@ -1,15 +1,15 @@
 10
 
 dir
-0
+27
 file://localhost/Users/mwinkler/svn/timetrak/lib/generators/jquery
 file://localhost/Users/mwinkler/svn/timetrak
-add
 
 
 
-
-
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
 
 
 
@@ -28,29 +28,19 @@ add
 
 helper
 dir
-
-
-
-add
+
+scaffold
+dir
+
+scaffold_controller
+dir
 
 install
 dir
-
-
-
-add
 
 erb
 dir
-
-
-
-add
 
 active_record
 dir
-
-
-
-add
 

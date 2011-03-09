@@ -1,14 +1,14 @@
 10
 
 dir
-5
+26
 file://localhost/Users/mwinkler/svn/timetrak/db
 file://localhost/Users/mwinkler/svn/timetrak
 
 
 
-2010-06-19T17:37:42.518559Z
-3
+2010-09-13T23:27:42.615046Z
+14
 mwinkler
 
 
@@ -28,7 +28,7 @@ mwinkler
 
 schema.rb
 file
-14
+
 
 
 
@@ -130,14 +130,14 @@ has-props
 
 seeds.rb
 file
+27
 
 
 
-
-2010-06-16T19:22:11.000000Z
-92618fefd47cfdfc1e6edab74e289e4c
-2010-06-16T19:18:59.618885Z
-1
+2010-09-30T17:37:26.000000Z
+846ebc54fffe2720c7f6e6df0b53b962
+2011-02-07T20:12:45.754159Z
+27
 mwinkler
 
 
@@ -160,7 +160,7 @@ mwinkler
 
 
 
-353
+1050
 
 migrate
 dir

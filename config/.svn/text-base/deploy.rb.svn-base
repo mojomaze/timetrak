@@ -1,17 +1,24 @@
 set :application, "timetrak"
-set :repository,  "file://localhost/Users/mwinkler/svn/timetrak"
+default_run_options[:pty] = true  # Must be set for the password prompt from git to work
+set :repository, "git@github.com:mojomaze/timetrak.git"  # Your clone URL
+set :scm, "git"
+set :scm_command, "/usr/local/git/bin/git"
+set :local_scm_command, "git"
+set :user, "mwinkler"  # The server's user for deploys
+#set :scm_passphrase, "pray4mojo"  # The deploy user's password
 
-set :scm, :subversion
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+set :branch, "master"
+
+set :deploy_via, :remote_cache
 
 set :deploy_to, "/opt/local/apache2/www/#{application}"
 
-set :default_environment, { 
-  'PATH' => "/Users/mwinkler/.rvm/bin:/Users/mwinkler/.rvm/gems/ruby-1.9.2-preview3/bin:/Users/mwinkler/.rvm/gems/ruby-1.9.2-preview3@global/bin:/Users/mwinkler/.rvm/rubies/ruby-1.9.2-preview3/bin:$PATH}",
-  'RUBY_VERSION' => 'ruby 1.9.2-preview3',
-  'GEM_HOME' => '/Users/mwinkler/.rvm/gems/ruby-1.9.2-preview3',
-  'GEM_PATH' => '/Users/mwinkler/.rvm/gems/ruby-1.9.2-preview3' 
-}
+# set :default_environment, { 
+#   'PATH' => "/Users/mwinkler/.rvm/bin:/Users/mwinkler/.rvm/gems/ruby-1.9.2-p0@rails3/bin:/Users/mwinkler/.rvm/gems/ruby-1.9.2-p0@global/bin:/Users/mwinkler/.rvm/rubies/ruby-1.9.2-p0/bin:$PATH}",
+#   'RUBY_VERSION' => 'ruby 1.9.2-p0',
+#   'GEM_HOME' => '/Users/mwinkler/.rvm/gems/ruby-1.9.2-p0',
+#   'GEM_PATH' => '/Users/mwinkler/.rvm/gems/ruby-1.9.2-p0' 
+# }
 
 # alternative syntax for single server
 server "localhost", :app, :web, :db, :primary => true

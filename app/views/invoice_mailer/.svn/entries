@@ -1,7 +1,7 @@
 10
 
 dir
-20
+26
 file://localhost/Users/mwinkler/svn/timetrak/app/views/invoice_mailer
 file://localhost/Users/mwinkler/svn/timetrak
 
@@ -28,14 +28,14 @@ mwinkler
 
 client_invoice.html.erb
 file
+27
 
 
 
-
-2010-06-18T21:31:20.000000Z
-c15a5689c78c204e8a83bd97c221fe34
-2010-06-19T17:37:42.518559Z
-3
+2010-10-01T20:26:52.000000Z
+db5461f14fc1915b3d0ec2cc0b33d2f7
+2011-02-07T20:12:45.754159Z
+27
 mwinkler
 
 
@@ -58,18 +58,18 @@ mwinkler
 
 
 
-2087
+2037
 
 client_invoice.text.erb
 file
+27
 
 
 
-
-2010-06-18T21:32:03.000000Z
-30c9ae0cf5fd84f2b043bbee9c59e0e3
-2010-06-19T17:37:42.518559Z
-3
+2010-10-01T20:23:30.000000Z
+177c7a02f6b6d98c79c84174819f7acc
+2011-02-07T20:12:45.754159Z
+27
 mwinkler
 
 
@@ -92,5 +92,5 @@ mwinkler
 
 
 
-748
+698
 

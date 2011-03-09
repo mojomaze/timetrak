@@ -1,15 +1,15 @@
 10
 
 dir
-0
+27
 file://localhost/Users/mwinkler/svn/timetrak/lib/generators
 file://localhost/Users/mwinkler/svn/timetrak
-add
 
 
 
-
-
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
 
 
 
@@ -28,8 +28,38 @@ add
 
 jquery
 dir
+
+jquery.rb
+file
 
 
 
-add
+
+2010-10-08T15:52:41.000000Z
+86388c6b26f2613bb74cd89efae25caa
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+307
 

@@ -1,0 +1,15 @@
+<div class="detail-edit-btn">
+  <%%= link_to "Edit", edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), :remote => true,
+                :class => "gray-btn both-round detail-edit", :id => "<%= singular_table_name %>_edit_btn" %>
+    <span id="load_edit" class="loading">Loading...</span>
+</div>
+
+<table>
+<% for attribute in attributes -%>
+  <tr>
+    <th><%= attribute.name.titleize %></th>
+    <td><%%= @<%= singular_table_name %>.<%= attribute.name %> %></td>
+  </tr>
+<% end -%>
+
+</table>

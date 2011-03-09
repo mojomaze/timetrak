@@ -1,0 +1,3 @@
+$("#errors").html("<%%= escape_javascript(render("error_messages", :target => @<%= singular_table_name %>)) %>");
+$('#load_save').hide();
+$('#detail_form_actions').show();

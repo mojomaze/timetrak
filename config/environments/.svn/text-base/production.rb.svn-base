@@ -39,4 +39,9 @@ Timetrak::Application.configure do
 
   # Enable threaded mode
   # config.threadsafe!
+  
+  config.action_mailer.default_url_options = { :host => 'warm-day-16.heroku.com' }
+  
+  # set deprecation notices to log
+  config.active_support.deprecation = :log
 end

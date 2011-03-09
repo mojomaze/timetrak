@@ -2,20 +2,6 @@
   <%= javascript_include_tag "app/invoice_activities/list.js" %>
 <% end %>
 
-<div class="splits-column">
-  <div id="project_split" class="invoice-split">
-    <%= render "project_split" %>
-  </div>
-
-  <div id="type_split" class="invoice-split">
-    <%= render "type_split" %>
-  </div>
-
-  <div id="service_split" class="invoice-split">
-    <%= render "service_split" %>
-  </div>
-</div>
-
 <div class="list-column">
   <div class="shadow-right">
     <div class="list-heading entry-heading">
@@ -60,5 +46,18 @@
         </table>
       </form>
     </div>
+  </div>
+</div>
+<div class="splits-column">
+  <div id="project_split" class="invoice-split">
+    <%= render "project_split" %>
+  </div>
+
+  <div id="type_split" class="invoice-split">
+    <%= render "type_split" %>
+  </div>
+
+  <div id="service_split" class="invoice-split">
+    <%= render "service_split" %>
   </div>
 </div>

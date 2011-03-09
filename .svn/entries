@@ -1,14 +1,14 @@
 10
 
 dir
-5
+26
 file://localhost/Users/mwinkler/svn/timetrak
 file://localhost/Users/mwinkler/svn/timetrak
 
 
 
-2010-06-19T18:04:00.693981Z
-5
+2010-09-29T22:09:16.753701Z
+26
 mwinkler
 
 
@@ -148,7 +148,15 @@ dir
 
 Gemfile.lock
 file
-23
+27
+
+
+
+2011-02-07T19:59:41.000000Z
+2aba5ded28e81d8fb47d8e83c3c7e40e
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
 
 
 
@@ -168,7 +176,9 @@ file
 
 
 
-deleted
+
+
+2292
 
 tmp
 dir
@@ -210,6 +220,9 @@ mwinkler
 script
 dir
 
+doc
+dir
+
 config
 dir
 
@@ -247,22 +260,19 @@ mwinkler
 
 40
 
-doc
-dir
-
 lib
 dir
 
 Gemfile
 file
-25
+27
 
 
 
-2010-09-29T18:23:31.000000Z
-aac40993c96d463335bfd6a42f7cc896
-2010-09-29T20:17:21.256609Z
-25
+2010-12-09T20:57:24.000000Z
+56220f77588476619b7bd3853073f55e
+2011-02-07T20:12:45.754159Z
+27
 mwinkler
 
 
@@ -285,8 +295,42 @@ mwinkler
 
 
 
-782
+625
 
 public
 dir
+
+README.markdown
+file
+27
+
+
+
+2010-12-08T23:30:37.000000Z
+020deb9e99faa2cd7f19ef3adf97d9cb
+2011-02-07T20:12:45.754159Z
+27
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+91
 

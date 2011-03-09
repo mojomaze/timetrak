@@ -1,0 +1,7 @@
+<tr id="user_<%= user.id %>" class="list-record">
+  <td><%= check_box_tag 'action_id[]',user.id, false, :id => "user_action_id_#{user.id}" %>
+      <td class="user-edit"><%= user.username %></td>
+      <td class="user-edit"><%= user.full_name %></td>
+      <td class="user-edit"><%= user.billing_name %></td>
+      <td class="user-edit"><%= user.email %></td>
+  </tr>

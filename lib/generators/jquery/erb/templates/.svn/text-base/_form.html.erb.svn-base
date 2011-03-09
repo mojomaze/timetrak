@@ -1,0 +1,26 @@
+<%%= form_for(@<%= singular_table_name %>, :remote => true, :html => { :id => "<%= singular_table_name %>_edit_form" }) do |f| %>
+  <table>
+    <tr><td id="errors" colspan="2"><%%= render "error_messages", :target => @<%= singular_table_name %> %></td></tr>
+    <% for attribute in attributes -%>
+      <tr>
+        <th><%%= f.label :<%= attribute.name %> %></th>
+        <td><%%= f.<%= attribute.field_type %> :<%= attribute.name %> %></td>
+      </tr>
+    <% end -%>
+    <tr>
+      <th></th>
+      <td>
+        <span id="detail_form_actions">
+          <%%= f.submit %> or 
+          <%% if @<%= singular_table_name %>.new_record? %>
+            <%%= link_to "Cancel", <%= plural_table_name %>_path, :id => "cancel_edit_item" %>
+          <%% else %>
+            <%%= link_to "Cancel", <%= singular_table_name %>_path(@<%= singular_table_name %>), :remote => true, :id => "cancel_edit_item" %>
+          <%% end %>
+        </span>
+        <span id="load_cancel" class="loading">Canceling...</span>
+        <span id="load_save" class="loading">Saving...</span>
+      </td>
+    </tr>
+  </table>
+<%% end %>

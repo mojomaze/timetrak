@@ -1,14 +1,14 @@
 10
 
 dir
-20
+26
 file://localhost/Users/mwinkler/svn/timetrak/app/views/clients
 file://localhost/Users/mwinkler/svn/timetrak
 
 
 
-2010-06-23T21:52:35.943472Z
-6
+2010-09-29T20:17:21.256609Z
+25
 mwinkler
 
 
@@ -28,7 +28,7 @@ mwinkler
 
 index.html.erb
 file
-24
+
 
 
 
@@ -62,7 +62,7 @@ mwinkler
 
 _client.html.erb
 file
-24
+
 
 
 
@@ -96,7 +96,7 @@ mwinkler
 
 show.html.erb
 file
-25
+
 
 
 
@@ -130,7 +130,7 @@ mwinkler
 
 _detail_actions.html.erb
 file
-24
+
 
 
 
@@ -164,7 +164,7 @@ mwinkler
 
 edit.html.erb
 file
-24
+
 
 
 
@@ -198,7 +198,7 @@ mwinkler
 
 show.js.erb
 file
-24
+
 
 
 
@@ -232,7 +232,7 @@ mwinkler
 
 new.html.erb
 file
-24
+
 
 
 
@@ -264,77 +264,9 @@ mwinkler
 
 81
 
-update.js.erb
-file
-24
-
-
-
-2010-09-24T21:40:47.000000Z
-85492b9bbf29464f07d0ed1bafc62ecb
-2010-09-24T22:10:29.740295Z
-24
-mwinkler
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-276
-
-_list_actions.html.erb
-file
-24
-
-
-
-2010-09-24T21:26:18.000000Z
-61a3dc8b15215e88c9401be2f4ae07d1
-2010-09-24T22:10:29.740295Z
-24
-mwinkler
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-867
-
 _client_body.html.erb
 file
-24
+
 
 
 
@@ -366,9 +298,77 @@ mwinkler
 
 306
 
+_list_actions.html.erb
+file
+
+
+
+
+2010-09-24T21:26:18.000000Z
+61a3dc8b15215e88c9401be2f4ae07d1
+2010-09-24T22:10:29.740295Z
+24
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+867
+
+update.js.erb
+file
+
+
+
+
+2010-09-24T21:40:47.000000Z
+85492b9bbf29464f07d0ed1bafc62ecb
+2010-09-24T22:10:29.740295Z
+24
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+276
+
 edit.js.erb
 file
-24
+
 
 
 
@@ -402,7 +402,7 @@ mwinkler
 
 _client_detail.html.erb
 file
-24
+
 
 
 
@@ -434,43 +434,9 @@ mwinkler
 
 582
 
-error.js.erb
-file
-24
-
-
-
-2010-09-24T21:39:36.000000Z
-0a9b95bf533ca8ed406a06440b8dea4f
-2010-09-24T22:10:29.740295Z
-24
-mwinkler
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-157
-
 destroy.js.erb
 file
-24
+
 
 
 
@@ -502,9 +468,43 @@ mwinkler
 
 70
 
+error.js.erb
+file
+
+
+
+
+2010-09-24T21:39:36.000000Z
+0a9b95bf533ca8ed406a06440b8dea4f
+2010-09-24T22:10:29.740295Z
+24
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+157
+
 _form.html.erb
 file
-24
+
 
 
 

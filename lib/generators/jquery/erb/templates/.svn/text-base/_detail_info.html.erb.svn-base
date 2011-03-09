@@ -1,0 +1,2 @@
+<li>Created: <%%= target.created_at.strftime("%m-%d-%y") %></li>
+<li>Last Mod: <%%= target.updated_at.strftime("%m-%d-%y") %></li>

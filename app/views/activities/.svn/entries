@@ -1,14 +1,14 @@
 10
 
 dir
-20
+26
 file://localhost/Users/mwinkler/svn/timetrak/app/views/activities
 file://localhost/Users/mwinkler/svn/timetrak
 
 
 
-2010-09-22T22:38:22.437933Z
-20
+2010-09-24T22:10:29.740295Z
+24
 mwinkler
 
 
@@ -28,7 +28,7 @@ mwinkler
 
 index.html.erb
 file
-24
+
 
 
 
@@ -403,40 +403,6 @@ mwinkler
 
 306
 
-destroy.js.erb
-file
-
-
-
-
-2010-09-22T18:36:15.000000Z
-d7b75a3810f5826cce56414e6693a0ac
-2010-09-22T22:38:22.437933Z
-20
-mwinkler
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-76
-
 error.js.erb
 file
 
@@ -470,6 +436,40 @@ mwinkler
 
 
 102
+
+destroy.js.erb
+file
+
+
+
+
+2010-09-22T18:36:15.000000Z
+d7b75a3810f5826cce56414e6693a0ac
+2010-09-22T22:38:22.437933Z
+20
+mwinkler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+76
 
 _form.html.erb
 file

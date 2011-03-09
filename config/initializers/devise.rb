@@ -12,9 +12,6 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   config.authentication_keys = [ :username ]
   
-  # setting default back to prev: “cryptor” was changed to :bcrypt instead of :sha1.
-  config.encryptor = :sha1
-
   # Tell if authentication through request.params is enabled. True by default.
   # config.params_authenticatable = true
 
@@ -37,7 +34,7 @@ Devise.setup do |config|
   # authentication tools as :clearance_sha1, :authlogic_sha512 (then you should set
   # stretches above to 20 for default behavior) and :restful_authentication_sha1
   # (then you should set stretches to 10, and copy REST_AUTH_SITE_KEY to pepper)
-  # config.encryptor = :sha1
+  config.encryptor = :sha1
 
   # ==> Configuration for :confirmable
   # The time you want give to your user to confirm his account. During this time

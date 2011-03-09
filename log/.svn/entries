@@ -1,14 +1,14 @@
 10
 
 dir
-5
+26
 file://localhost/Users/mwinkler/svn/timetrak/log
 file://localhost/Users/mwinkler/svn/timetrak
 
 
 
-2010-06-19T17:40:03.862280Z
-4
+2010-09-29T22:09:16.753701Z
+26
 mwinkler
 has-props
 
@@ -28,7 +28,7 @@ has-props
 
 test.log
 file
-10
+
 
 
 
@@ -62,14 +62,14 @@ mwinkler
 
 development.log
 file
-26
+27
 
 
 
-2010-09-29T21:58:40.000000Z
-bccec3edc531f8dfbabdbc90467bebc0
-2010-09-29T22:09:16.753701Z
-26
+2010-12-09T21:05:44.000000Z
+82d8dfadb1b69dfd9fd19619f04cf384
+2011-02-07T20:12:45.754159Z
+27
 mwinkler
 
 
@@ -92,7 +92,7 @@ mwinkler
 
 
 
-23112581
+24108500
 
 production.log
 file
